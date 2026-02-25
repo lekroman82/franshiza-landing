@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Франшиза «Первая Школа Тенниса» — прибыль от 200 000 ₽/мес</title>
+  <meta name="description" content="Франшиза теннисной школы: прибыль от 200 000 ₽/мес, окупаемость 3–6 месяцев, готовый поток клиентов. 10+ лет опыта.">
+  <meta property="og:title" content="Франшиза «Первая Школа Тенниса» — прибыль от 200 000 ₽/мес">
+  <meta property="og:description" content="Вы заходите в поток, а не начинаете с нуля. CRM, заявки, методика — уже работают.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Первая Школа Тенниса">
+  <meta property="og:image" content="https://bolshoitennis.ru/og-image.png">
+  <meta property="og:url" content="https://bolshoitennis.ru">
+  <link rel="canonical" href="https://bolshoitennis.ru">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23055F96'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23F07D19' stroke-width='2.5'/%3E%3Cpath d='M8.5 12 Q12 16 8.5 20M23.5 12 Q20 16 23.5 20' fill='none' stroke='white' stroke-width='1.8'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #fff; color: #1A2E3A; line-height: 1.6; }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    button { cursor: pointer; border: none; background: none; font: inherit; }
+
+    :root {
+      --blue: #055F96; --blue-dark: #044275; --blue-light: #E8F2FA;
+      --orange: #F07D19; --orange-dark: #D46A10;
+      --green: #96AF1E; --gray: #B7C6CF;
+      --bg2: #F0F5FA; --text: #1A2E3A; --text-muted: #5A7080;
+      --border: #D4E1EA;
+      --shadow: 0 4px 24px rgba(5,95,150,.10);
+      --shadow-lg: 0 8px 40px rgba(5,95,150,.16);
+      --radius: 12px; --radius-sm: 8px; --t: 0.25s ease;
+    }
+
+    h1,h2,h3,h4 { font-family: 'Oswald', 'Arial Narrow', Impact, sans-serif; font-weight: 700; line-height: 1.15; }
+    h1 { font-size: clamp(2rem, 5vw, 3.2rem); }
+    h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); }
+    h3 { font-size: clamp(1.05rem, 2vw, 1.35rem); }
+    p { margin-bottom: 0.75rem; } p:last-child { margin-bottom: 0; }
+
+    .container { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+    section { padding: 80px 0; }
+    .tag { font-family: 'Oswald', sans-serif; font-weight: 500; font-size: .82rem;
+      letter-spacing: .12em; text-transform: uppercase; color: var(--orange);
+      margin-bottom: 14px; display: block; }
+    .section-title { color: var(--blue); margin-bottom: 16px; }
+    .section-sub { color: var(--text-muted); font-size: 1rem; max-width: 640px; margin-bottom: 48px; }
+    .text-center { text-align: center; }
+    .mx-auto { margin-left: auto; margin-right: auto; }
+
+    /* BUTTONS */
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      font-family: 'Oswald', sans-serif; font-weight: 600; font-size: .95rem;
+      letter-spacing: .06em; text-transform: uppercase; padding: 14px 28px;
+      border-radius: var(--radius-sm); transition: all .3s cubic-bezier(.16,1,.3,1); cursor: pointer;
+      border: 2px solid transparent; min-height: 48px; position: relative; overflow: hidden; }
+    .btn-orange { background: var(--orange); color: white; }
+    .btn-orange::after { content: ''; position: absolute; top: -50%; left: -60%; width: 40%; height: 200%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,.25), transparent);
+      transform: skewX(-20deg); transition: left .6s ease; pointer-events: none; }
+    .btn-orange:hover::after { left: 120%; }
+    .btn-orange:hover { background: var(--orange-dark); transform: translateY(-3px); box-shadow: 0 8px 28px rgba(240,125,25,.4); }
+    .btn-blue { background: var(--blue); color: white; }
+    .btn-blue::after { content: ''; position: absolute; top: -50%; left: -60%; width: 40%; height: 200%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,.2), transparent);
+      transform: skewX(-20deg); transition: left .6s ease; pointer-events: none; }
+    .btn-blue:hover::after { left: 120%; }
+    .btn-blue:hover { background: var(--blue-dark); transform: translateY(-3px); box-shadow: 0 8px 28px rgba(5,95,150,.3); }
+    .btn-outline { border-color: var(--blue); color: var(--blue); }
+    .btn-outline:hover { background: var(--blue); color: white; }
+    .btn-ghost { border-color: rgba(255,255,255,.4); color: white; }
+    .btn-ghost:hover { background: rgba(255,255,255,.15); border-color: rgba(255,255,255,.7); }
+    .btn-white { background: white; color: var(--blue); }
+    .btn-white:hover { background: var(--bg2); }
+    .btn-lg { padding: 18px 36px; font-size: 1.05rem; }
+    .btn-full { width: 100%; }
+    .btn:disabled { opacity:.6; cursor:not-allowed; transform:none !important; }
+
+    /* NAV */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(255,255,255,.92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 2px 12px rgba(5,95,150,.07); transition: all .3s ease; }
+    nav.scrolled { box-shadow: 0 4px 24px rgba(5,95,150,.12); }
+    nav.scrolled .nav-inner { height: 56px; }
+    .nav-inner { max-width: 1140px; margin: 0 auto; padding: 0 20px;
+      height: 68px; display: flex; align-items: center; gap: 32px; transition: height .3s ease; }
+    .logo { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+    .logo-icon { width: 40px; height: 40px; background: var(--blue); border-radius: 10px;
+      display: flex; align-items: center; justify-content: center; }
+    .logo-icon svg { width: 24px; height: 24px; }
+    .logo-text { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1rem;
+      color: var(--blue); line-height: 1.15; }
+    .logo-text small { font-size: .65rem; font-weight: 500; color: var(--text-muted);
+      text-transform: uppercase; letter-spacing: .08em; display: block; }
+    .nav-links { display: flex; gap: 22px; flex: 1; }
+    .nav-links a { font-size: .88rem; font-weight: 500; color: var(--text-muted);
+      transition: var(--t); white-space: nowrap; }
+    .nav-links a:hover { color: var(--blue); }
+    .burger { display: none; flex-direction: column; gap: 5px; padding: 8px; }
+    .burger span { display: block; width: 22px; height: 2px; background: var(--blue);
+      border-radius: 2px; transition: all .3s cubic-bezier(.16,1,.3,1); transform-origin: center; }
+    .burger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .burger.active span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .burger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+    .mobile-menu { position: fixed; inset: 68px 0 0 0; z-index: 999;
+      background: rgba(255,255,255,.97); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      padding: 20px; border-top: 1px solid var(--border);
+      display: flex; flex-direction: column; gap: 4px; overflow-y: auto;
+      opacity: 0; visibility: hidden; transform: translateY(-16px);
+      transition: all .35s cubic-bezier(.16,1,.3,1); pointer-events: none; }
+    .mobile-menu.open { opacity: 1; visibility: visible; transform: none; pointer-events: auto; }
+    .mobile-menu a { display: block; padding: 18px 16px; font-size: 1rem; font-weight: 500;
+      color: var(--text); border-radius: var(--radius-sm); transition: var(--t);
+      min-height: 48px; }
+    .mobile-menu a:hover { background: var(--bg2); color: var(--blue); }
+    .mobile-menu .btn { margin-top: 12px; }
+
+    /* HERO — animated gradient + floating orbs */
+    #hero { background: linear-gradient(140deg, var(--blue) 0%, #0a4f7e 30%, #044275 60%, #0b6aaa 100%);
+      background-size: 300% 300%; animation: heroGradient 12s ease infinite;
+      color: white; padding: 140px 0 80px; position: relative; overflow: hidden; }
+    #hero::before { content: ''; position: absolute; top: -40%; right: -15%; width: 700px; height: 700px;
+      background: radial-gradient(circle, rgba(240,125,25,.15) 0%, transparent 70%);
+      border-radius: 50%; pointer-events: none; animation: floatOrb 8s ease-in-out infinite; }
+    #hero::after { content: ''; position: absolute; bottom: -30%; left: -10%; width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(255,255,255,.06) 0%, transparent 70%);
+      border-radius: 50%; pointer-events: none; animation: floatOrb 10s ease-in-out infinite reverse; }
+    @keyframes heroGradient { 0%,100%{background-position:0% 50%} 50%{background-position:100% 50%} }
+    @keyframes floatOrb { 0%,100%{transform:translate(0,0) scale(1)} 50%{transform:translate(30px,-40px) scale(1.08)} }
+    .hero-wrap { display: grid; grid-template-columns: 1fr 400px; gap: 60px; align-items: center; }
+    .hero-tag { font-family: 'Oswald', sans-serif; font-size: .8rem; font-weight: 500;
+      letter-spacing: .15em; text-transform: uppercase; color: rgba(255,255,255,.65);
+      margin-bottom: 18px; display: block; }
+    #hero h1 { color: white; margin-bottom: 18px; }
+    #hero h1 em { color: var(--orange); font-style: normal; }
+    .hero-sub { font-size: 1.1rem; color: rgba(255,255,255,.8); margin-bottom: 36px; }
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 52px; }
+    .hero-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .hero-stat { border-left: 3px solid var(--orange); padding-left: 14px; }
+    .hero-stat-num { display: block; font-family: 'Oswald', sans-serif; font-weight: 700;
+      font-size: 1.75rem; color: white; line-height: 1; margin-bottom: 4px; }
+    .hero-stat-label { font-size: .8rem; color: rgba(255,255,255,.6); line-height: 1.35; }
+
+    .hero-card { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2);
+      border-radius: var(--radius); padding: 32px; backdrop-filter: blur(8px); }
+    .hero-card-title { font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 1.1rem;
+      color: white; margin-bottom: 20px; padding-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,.15); }
+    .fin-row { display: flex; justify-content: space-between; align-items: center;
+      padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,.1); }
+    .fin-row:last-of-type { border-bottom: none; }
+    .fin-label { font-size: .88rem; color: rgba(255,255,255,.65); }
+    .fin-val { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.05rem; color: white; }
+    .fin-val.accent { color: var(--orange); }
+    .hero-card .btn { margin-top: 20px; width: 100%; }
+
+    /* MOBILE FINANCE STRIP — shows on mobile when card is hidden */
+    .mobile-fin { display: none; margin-top: 32px; padding: 20px; background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.2); border-radius: var(--radius); }
+    .mobile-fin-row { display: flex; justify-content: space-between; padding: 6px 0;
+      font-size: .9rem; color: rgba(255,255,255,.75); }
+    .mobile-fin-row strong { color: var(--orange); font-family: 'Oswald', sans-serif; font-weight: 700; }
+    .mobile-fin .btn { margin-top: 14px; }
+
+    /* WHY */
+    #why { background: var(--bg2); }
+    .cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .card { background: white; border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 28px; transition: all .35s cubic-bezier(.16,1,.3,1); }
+    .card:hover { box-shadow: 0 12px 48px rgba(5,95,150,.18); border-color: var(--blue); transform: translateY(-8px); }
+    .card-icon { transition: transform .35s cubic-bezier(.16,1,.3,1); }
+    .card:hover .card-icon { transform: scale(1.15) rotate(-5deg); }
+    .card-icon { width: 48px; height: 48px; background: var(--blue-light); border-radius: 12px;
+      display: flex; align-items: center; justify-content: center; margin-bottom: 18px; font-size: 1.5rem; }
+    .card h3 { font-size: 1.05rem; color: var(--blue); margin-bottom: 10px; }
+    .card p { color: var(--text-muted); font-size: .92rem; line-height: 1.65; margin: 0; }
+
+    /* PARTNER */
+    #partner { background: white; }
+    .benefits-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .benefit { display: flex; gap: 16px; align-items: flex-start;
+      padding: 20px; background: var(--bg2); border-radius: var(--radius);
+      border-left: 4px solid var(--orange); transition: all .35s cubic-bezier(.16,1,.3,1); }
+    .benefit:hover { background: var(--blue-light); border-left-color: var(--blue);
+      transform: translateX(6px); box-shadow: 0 4px 20px rgba(5,95,150,.1); }
+    .b-num { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.4rem;
+      color: var(--orange); flex-shrink: 0; line-height: 1; width: 30px; }
+    .b-title { font-weight: 600; color: var(--text); font-size: .95rem; margin-bottom: 3px; }
+    .b-sub { font-size: .85rem; color: var(--text-muted); line-height: 1.5; }
+
+    /* CTA STRIP — between sections */
+    .cta-strip { padding: 40px 0; text-align: center; }
+    .cta-strip p { color: var(--text-muted); margin-bottom: 18px; font-size: 1rem; }
+
+    /* NEURO */
+    #neuro { background: var(--blue); }
+    #neuro .tag { color: var(--orange); }
+    #neuro .section-title { color: white; }
+    #neuro .section-sub { color: rgba(255,255,255,.72); }
+    .neuro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+    .neuro-features { display: flex; flex-direction: column; gap: 20px; margin-top: 32px; }
+    .nf { display: flex; gap: 16px; align-items: flex-start; }
+    .nf-icon { width: 44px; height: 44px; background: rgba(240,125,25,.2); border-radius: 10px;
+      display: flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0; }
+    .nf h4 { font-family: 'Oswald', sans-serif; font-weight: 600; color: white; font-size: 1rem; margin-bottom: 3px; }
+    .nf p { font-size: .88rem; color: rgba(255,255,255,.65); margin: 0; }
+    .chat-box { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.15);
+      border-radius: var(--radius); padding: 28px; display: flex; flex-direction: column; gap: 14px; }
+    .bubble { border-radius: 12px; padding: 12px 16px; font-size: .9rem; max-width: 90%; }
+    .bubble-label { font-size: .72rem; color: rgba(255,255,255,.45); margin-bottom: 5px; }
+    .bubble-user { background: rgba(255,255,255,.12); color: rgba(255,255,255,.9); }
+    .bubble-bot { background: var(--orange); color: white; margin-left: auto; }
+    .chat-badge { display: flex; align-items: center; gap: 8px; margin-top: 8px;
+      font-size: .8rem; color: rgba(255,255,255,.5); }
+    .chat-dot { width: 8px; height: 8px; background: #4ade80; border-radius: 50%;
+      animation: blink 1.5s infinite; }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
+
+    /* METHOD */
+    #method { background: var(--bg2); }
+    .method-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+    .method-badge { display: inline-block; background: var(--orange); color: white;
+      font-family: 'Oswald', sans-serif; font-weight: 600; font-size: .78rem;
+      letter-spacing: .1em; text-transform: uppercase; padding: 6px 16px; border-radius: 20px; margin-bottom: 20px; }
+    .method-steps { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
+    .ms { display: flex; gap: 14px; align-items: center; }
+    .ms-num { width: 38px; height: 38px; background: var(--blue); color: white; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; font-family: 'Oswald', sans-serif;
+      font-weight: 700; font-size: .95rem; flex-shrink: 0; }
+    .ms-text { font-size: .93rem; color: var(--text); font-weight: 500; }
+    .method-result { background: white; border-radius: var(--radius); padding: 32px;
+      border: 2px solid var(--blue-light); }
+    .method-result h3 { color: var(--blue); margin-bottom: 16px; font-size: 1.2rem; }
+    .method-result p { color: var(--text-muted); font-size: .93rem; line-height: 1.7; }
+    .method-highlight { margin-top: 20px; padding: 16px; background: var(--blue-light);
+      border-radius: var(--radius-sm); color: var(--blue); font-weight: 600; font-size: .9rem; }
+
+    /* ATTEST */
+    #attest { background: white; }
+    .attest-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; margin-bottom: 40px; }
+    .attest-card { background: var(--bg2); border-radius: var(--radius); padding: 32px; }
+    .attest-big { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 3rem;
+      color: var(--orange); line-height: 1; margin-bottom: 8px; }
+    .attest-title { font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 1.15rem;
+      color: var(--blue); margin-bottom: 12px; }
+    .checklist { display: flex; flex-direction: column; gap: 10px; margin-top: 16px; }
+    .ci { display: flex; gap: 10px; align-items: flex-start; font-size: .9rem; color: var(--text); }
+    .ci-tick { color: var(--green); font-size: 1rem; flex-shrink: 0; margin-top: 1px; }
+    .league-btn { display: inline-flex; align-items: center; gap: 8px; margin-top: 16px;
+      padding: 12px 20px; background: var(--blue); color: white; border-radius: var(--radius-sm);
+      font-weight: 600; font-size: .88rem; transition: var(--t); min-height: 44px; }
+    .league-btn:hover { background: var(--blue-dark); }
+
+    .sources-strip { background: var(--blue-light); border-radius: var(--radius); padding: 24px 32px; }
+    .sources-title { font-family: 'Oswald', sans-serif; font-weight: 600; color: var(--blue);
+      margin-bottom: 14px; font-size: 1rem; }
+    .sources-row { display: flex; flex-wrap: wrap; gap: 10px; }
+    .src-badge { padding: 7px 16px; background: white; border: 1.5px solid var(--border);
+      border-radius: 24px; font-size: .85rem; font-weight: 600; color: var(--text); }
+
+    /* FOUNDER */
+    #founder { background: var(--bg2); }
+    .founder-grid { display: grid; grid-template-columns: 320px 1fr; gap: 48px; align-items: center; }
+    .founder-photo { width: 100%; aspect-ratio: 3/4; background: linear-gradient(135deg, var(--blue-light), #d4e8f5);
+      border-radius: var(--radius); display: flex; align-items: center; justify-content: center;
+      color: var(--blue); font-size: 4rem; border: 2px dashed var(--border); }
+    .founder-name { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.6rem;
+      color: var(--blue); margin-bottom: 4px; }
+    .founder-role { font-size: .9rem; color: var(--text-muted); margin-bottom: 20px; }
+    .founder-text { font-size: 1rem; color: var(--text); line-height: 1.75; margin-bottom: 24px; }
+    .founder-quote { padding: 20px 24px; background: white; border-left: 4px solid var(--orange);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0; font-style: italic;
+      color: var(--text); font-size: 1.05rem; line-height: 1.65; }
+
+    /* PACKAGES */
+    #packages { background: white; }
+    .packages-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .pkg { background: white; border-radius: var(--radius); padding: 32px;
+      border: 2px solid var(--border); transition: all .4s cubic-bezier(.16,1,.3,1); display: flex;
+      flex-direction: column; position: relative; }
+    .pkg:hover { border-color: var(--blue); box-shadow: 0 16px 56px rgba(5,95,150,.18); transform: translateY(-10px); }
+    .pkg.featured { border-color: var(--orange); }
+    .pkg-badge { position: absolute; top: -13px; left: 50%; transform: translateX(-50%);
+      background: var(--orange); color: white; font-family: 'Oswald', sans-serif; font-weight: 600;
+      font-size: .75rem; letter-spacing: .1em; text-transform: uppercase;
+      padding: 4px 16px; border-radius: 20px; white-space: nowrap; }
+    .pkg-name { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.3rem;
+      color: var(--blue); margin-bottom: 6px; }
+    .pkg.featured .pkg-name { color: var(--orange); }
+    .pkg-price { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.9rem;
+      color: var(--text); margin-bottom: 4px; }
+    .pkg-price span { font-size: .95rem; color: var(--text-muted); font-weight: 400; font-family: 'Inter', sans-serif; }
+    .pkg-royalty { font-size: .85rem; color: var(--text-muted); margin-bottom: 22px;
+      padding-bottom: 22px; border-bottom: 1px solid var(--border); }
+    .pkg-features { flex: 1; display: flex; flex-direction: column; gap: 9px; margin-bottom: 24px; }
+    .pkg-feature { display: flex; gap: 9px; font-size: .9rem; color: var(--text); }
+    .pkg-check { color: var(--green); flex-shrink: 0; }
+
+    .scarcity { text-align: center; margin-top: 36px; padding: 24px; background: var(--blue-light);
+      border-radius: var(--radius); border: 1px dashed var(--blue); animation: scarcityPulse 4s ease-in-out infinite; }
+    .scarcity p { font-size: 1rem; color: var(--blue); font-weight: 600; margin-bottom: 14px; }
+    @keyframes scarcityPulse { 0%,100%{border-color: var(--blue)} 50%{border-color: var(--orange)} }
+
+    /* STEPS */
+    #steps { background: var(--bg2); }
+    .steps-wrap { display: grid; grid-template-columns: 360px 1fr; gap: 60px; align-items: start; }
+    .steps-list { position: relative; }
+    .steps-line { position: absolute; left: 21px; top: 28px; bottom: 28px; width: 2px;
+      background: linear-gradient(to bottom, var(--orange), var(--blue)); }
+    .step { display: flex; gap: 22px; padding: 24px 0; }
+    .step-num { width: 44px; height: 44px; background: var(--blue); color: white; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; font-family: 'Oswald', sans-serif;
+      font-weight: 700; font-size: 1.1rem; flex-shrink: 0; position: relative; z-index: 1;
+      box-shadow: 0 0 0 4px var(--bg2); }
+    .step-body { padding-top: 8px; }
+    .step-title { font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 1.05rem;
+      color: var(--blue); margin-bottom: 6px; }
+    .step-text { color: var(--text-muted); font-size: .9rem; line-height: 1.65; }
+    .step-dur { display: inline-block; margin-top: 8px; padding: 3px 10px; background: white;
+      color: var(--blue); border-radius: 12px; font-size: .78rem; font-weight: 600; }
+
+    /* FAQ */
+    #faq { background: white; }
+    .faq-list { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 10px; }
+    .faq-item { background: var(--bg2); border-radius: var(--radius); overflow: hidden;
+      border: 1px solid var(--border); transition: all .3s ease; }
+    .faq-item:hover { box-shadow: 0 4px 16px rgba(5,95,150,.08); border-color: var(--blue); }
+    .faq-q { width: 100%; display: flex; justify-content: space-between; align-items: center;
+      padding: 20px 22px; text-align: left; font-weight: 600; font-size: .97rem; color: var(--text);
+      transition: var(--t); gap: 16px; min-height: 56px; }
+    .faq-q:hover, .faq-q.active { color: var(--blue); }
+    .faq-arr { flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%;
+      background: var(--blue-light); color: var(--blue); display: flex; align-items: center;
+      justify-content: center; font-size: .8rem; transition: var(--t); }
+    .faq-q.active .faq-arr { background: var(--blue); color: white; transform: rotate(180deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+    .faq-a-inner { padding: 0 22px 18px; color: var(--text-muted); line-height: 1.75; font-size: .93rem; }
+
+    /* FORM */
+    #form-section { background: linear-gradient(140deg, var(--blue) 0%, #0a4f7e 100%); position: relative; }
+    #form-section::before { content: ''; position: absolute; bottom: -30%; left: -10%; width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(240,125,25,.06) 0%, transparent 70%);
+      border-radius: 50%; pointer-events: none; }
+    .form-wrap { max-width: 640px; margin: 0 auto; position: relative; }
+    #form-section .tag { color: var(--orange); text-align: center; display: block; }
+    #form-section .section-title { color: white; text-align: center; }
+    #form-section .section-sub { color: rgba(255,255,255,.72); text-align: center; margin: 0 auto 40px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+    .form-field { display: flex; flex-direction: column; gap: 6px; }
+    .form-field label { font-size: .86rem; font-weight: 500; color: rgba(255,255,255,.75); }
+    .form-field input, .form-field select {
+      padding: 14px 16px; background: rgba(255,255,255,.1); min-height: 48px;
+      border: 1.5px solid rgba(255,255,255,.25); border-radius: var(--radius-sm);
+      color: white; font-size: .97rem; font-family: 'Inter', sans-serif;
+      transition: var(--t); width: 100%; }
+    .form-field input::placeholder { color: rgba(255,255,255,.4); }
+    .form-field input:focus, .form-field select:focus {
+      outline: none; border-color: var(--orange); background: rgba(255,255,255,.15); }
+    .form-field select { appearance: none; cursor: pointer; }
+    .form-field select option { background: #044275; color: white; }
+    .form-note { font-size: .8rem; color: rgba(255,255,255,.5); margin-top: 12px; line-height: 1.6; }
+    .form-note a { color: rgba(255,255,255,.65); text-decoration: underline; }
+    .form-trust { display: flex; gap: 24px; margin-top: 24px; padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,.12); }
+    .trust-item { display: flex; align-items: center; gap: 8px; font-size: .82rem;
+      color: rgba(255,255,255,.6); }
+    .trust-icon { font-size: 1.2rem; }
+    .form-success { display: none; text-align: center; padding: 60px 20px; }
+    .form-success.show { display: block; animation: successPopIn .5s cubic-bezier(.16,1,.3,1); }
+    .success-title { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 2rem;
+      color: white; margin-bottom: 12px; }
+    .success-sub { color: rgba(255,255,255,.72); font-size: 1rem; }
+
+    /* FOOTER */
+    footer { background: #0d1a24; color: rgba(255,255,255,.65); padding: 52px 0 28px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; margin-bottom: 40px; }
+    .footer-brand p { font-size: .86rem; color: rgba(255,255,255,.5); margin-top: 14px; line-height: 1.75; }
+    .footer-col h4 { font-family: 'Oswald', sans-serif; font-weight: 600; color: white;
+      font-size: .88rem; margin-bottom: 16px; letter-spacing: .06em; text-transform: uppercase; }
+    .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
+    .footer-col li a { font-size: .87rem; transition: var(--t); }
+    .footer-col li a:hover { color: white; }
+    .footer-contact { font-size: .9rem; margin-bottom: 8px; }
+    .footer-contact a { color: white; font-weight: 600; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.1); padding-top: 24px;
+      display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .footer-copy { font-size: .8rem; }
+    .footer-legal { font-size: .78rem; text-align: right; }
+
+    /* FLOAT */
+    .float-btns { position: fixed; bottom: 88px; right: 22px; z-index: 900;
+      display: flex; flex-direction: column; gap: 12px; }
+    .float-btn { width: 52px; height: 52px; border-radius: 50%; display: flex;
+      align-items: center; justify-content: center; font-size: 1.35rem; color: white;
+      transition: var(--t); box-shadow: 0 4px 16px rgba(0,0,0,.22); }
+    .float-btn:hover { transform: scale(1.15) rotate(-5deg); box-shadow: 0 6px 24px rgba(0,0,0,.3); }
+    .float-wa { background: #25D366; }
+    .float-tg { background: #2AABEE; }
+
+    /* SCROLL TO TOP */
+    .scroll-top { position: fixed; bottom: 24px; left: 22px; z-index: 900;
+      width: 48px; height: 48px; border-radius: 50%; background: var(--blue); color: white;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 20px rgba(5,95,150,.25); cursor: pointer;
+      opacity: 0; visibility: hidden; transform: translateY(20px) scale(.8);
+      transition: all .35s cubic-bezier(.16,1,.3,1); border: none; font-size: 1.2rem; }
+    .scroll-top.show { opacity: 1; visibility: visible; transform: none; }
+    .scroll-top:hover { background: var(--blue-dark); transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 8px 28px rgba(5,95,150,.35); }
+    .scroll-top svg { width: 20px; height: 20px; }
+
+    /* CONTACT FORM SECTION */
+    #contact { background: white; }
+    .contact-wrap { max-width: 680px; margin: 0 auto; }
+    .contact-form { display: grid; gap: 16px; }
+    .contact-field { display: flex; flex-direction: column; gap: 6px; }
+    .contact-field label { font-size: .86rem; font-weight: 600; color: var(--text); }
+    .contact-field input, .contact-field textarea {
+      padding: 13px 16px; background: var(--bg2); border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm); color: var(--text); font-size: .95rem;
+      font-family: 'Inter', sans-serif; transition: all .25s ease; width: 100%; }
+    .contact-field input:focus, .contact-field textarea:focus {
+      outline: none; border-color: var(--blue); background: white;
+      box-shadow: 0 0 0 3px rgba(5,95,150,.1); }
+    .contact-field textarea { resize: vertical; min-height: 120px; }
+    .contact-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+    /* SUCCESS ANIMATION */
+    .contact-success { display: none; text-align: center; padding: 48px 20px; }
+    .contact-success.show { display: block; animation: successPopIn .5s cubic-bezier(.16,1,.3,1); }
+    .success-check-wrap { width: 88px; height: 88px; margin: 0 auto 24px; position: relative; }
+    .success-check-wrap svg { width: 88px; height: 88px; }
+    .success-check-circle { stroke: var(--green); stroke-width: 3; fill: none;
+      stroke-dasharray: 240; stroke-dashoffset: 240; animation: drawCircle .7s .15s ease forwards; }
+    .success-check-tick { stroke: var(--green); stroke-width: 4; fill: none;
+      stroke-linecap: round; stroke-linejoin: round;
+      stroke-dasharray: 40; stroke-dashoffset: 40; animation: drawTick .4s .7s ease forwards; }
+    .contact-success h3 { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.6rem;
+      color: var(--blue); margin-bottom: 8px; }
+    .contact-success p { color: var(--text-muted); font-size: 1rem; }
+    .confetti { position: absolute; width: 8px; height: 8px; border-radius: 2px; opacity: 0; }
+    .confetti:nth-child(1) { background: var(--orange); animation: confettiBurst .8s .6s ease forwards; --tx: -40px; --ty: -60px; }
+    .confetti:nth-child(2) { background: var(--blue); animation: confettiBurst .8s .65s ease forwards; --tx: 45px; --ty: -50px; }
+    .confetti:nth-child(3) { background: var(--green); animation: confettiBurst .8s .7s ease forwards; --tx: -30px; --ty: -75px; }
+    .confetti:nth-child(4) { background: var(--orange); animation: confettiBurst .8s .75s ease forwards; --tx: 55px; --ty: -65px; }
+    .confetti:nth-child(5) { background: var(--blue); animation: confettiBurst .9s .68s ease forwards; --tx: -55px; --ty: -45px; }
+    .confetti:nth-child(6) { background: var(--green); animation: confettiBurst .9s .72s ease forwards; --tx: 35px; --ty: -80px; }
+    @keyframes drawCircle { to { stroke-dashoffset: 0; } }
+    @keyframes drawTick { to { stroke-dashoffset: 0; } }
+    @keyframes successPopIn { from { opacity:0; transform: scale(.8); } to { opacity:1; transform: none; } }
+    @keyframes confettiBurst {
+      0% { opacity: 1; transform: translate(0,0) rotate(0deg) scale(1); }
+      100% { opacity: 0; transform: translate(var(--tx), var(--ty)) rotate(360deg) scale(0); }
+    }
+
+    /* PRIVACY MODAL */
+    .privacy-modal { display: none; position: fixed; inset: 0; z-index: 2000;
+      background: rgba(0,0,0,.5); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+      align-items: center; justify-content: center; padding: 20px; }
+    .privacy-content { background: white; border-radius: var(--radius); padding: 36px;
+      max-width: 600px; width: 100%; max-height: 80vh; overflow-y: auto;
+      animation: successPopIn .3s ease; position: relative; }
+    .privacy-content h3 { color: var(--blue); margin-bottom: 16px; }
+    .privacy-content p { color: var(--text-muted); font-size: .9rem; line-height: 1.75; margin-bottom: 12px; }
+    .privacy-close { position: absolute; top: 12px; right: 16px; font-size: 1.4rem; color: var(--text-muted);
+      cursor: pointer; background: none; border: none; padding: 8px; line-height: 1; }
+    .privacy-close:hover { color: var(--text); }
+
+    /* STICKY CTA */
+    .sticky-cta { position: fixed; bottom: 0; left: 0; right: 0; z-index: 900;
+      background: white; padding: 12px 16px; border-top: 2px solid var(--orange);
+      display: none; box-shadow: 0 -4px 16px rgba(0,0,0,.08);
+      transform: translateY(100%); transition: transform .35s cubic-bezier(.16,1,.3,1); }
+    .sticky-cta.show { display: block; transform: none; }
+
+    /* REVEAL ANIMATIONS */
+    .reveal { opacity: 0; transform: translateY(40px);
+      transition: opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1); }
+    .reveal.visible { opacity: 1; transform: none; }
+    .reveal-left { opacity: 0; transform: translateX(-50px);
+      transition: opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1); }
+    .reveal-left.visible { opacity: 1; transform: none; }
+    .reveal-right { opacity: 0; transform: translateX(50px);
+      transition: opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1); }
+    .reveal-right.visible { opacity: 1; transform: none; }
+    .reveal-scale { opacity: 0; transform: scale(.85);
+      transition: opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1); }
+    .reveal-scale.visible { opacity: 1; transform: none; }
+
+    /* PARALLAX LAYERS */
+    .parallax-layer { will-change: transform; transition: transform .1s linear; }
+
+    /* FLOATING PARTICLES in hero */
+    .hero-particle { position: absolute; border-radius: 50%; pointer-events: none; opacity: .12; }
+    .hero-particle:nth-child(1) { width: 6px; height: 6px; background: var(--orange); top: 20%; left: 15%; animation: particleDrift 7s ease-in-out infinite; }
+    .hero-particle:nth-child(2) { width: 10px; height: 10px; background: white; top: 60%; left: 70%; animation: particleDrift 9s ease-in-out infinite 1s; }
+    .hero-particle:nth-child(3) { width: 4px; height: 4px; background: var(--orange); top: 80%; left: 30%; animation: particleDrift 6s ease-in-out infinite 2s; }
+    .hero-particle:nth-child(4) { width: 8px; height: 8px; background: white; top: 35%; left: 85%; animation: particleDrift 11s ease-in-out infinite 0.5s; }
+    .hero-particle:nth-child(5) { width: 5px; height: 5px; background: var(--orange); top: 50%; left: 50%; animation: particleDrift 8s ease-in-out infinite 3s; }
+    @keyframes particleDrift {
+      0%,100% { transform: translate(0,0); }
+      25% { transform: translate(20px,-30px); }
+      50% { transform: translate(-15px,-50px); }
+      75% { transform: translate(25px,-20px); }
+    }
+
+    /* GLOW PULSE on featured pkg */
+    .pkg.featured { animation: glowPulse 3s ease-in-out infinite; }
+    @keyframes glowPulse { 0%,100%{box-shadow: 0 0 0 0 rgba(240,125,25,.15)} 50%{box-shadow: 0 0 30px 8px rgba(240,125,25,.12)} }
+
+    /* HERO card entrance */
+    .hero-card { animation: cardSlideIn 1s .3s cubic-bezier(.16,1,.3,1) both; }
+    @keyframes cardSlideIn { from { opacity:0; transform: translateY(30px) scale(.95); } to { opacity:1; transform: none; } }
+
+    /* TYPE WRITER effect on hero tag */
+    .hero-tag { animation: fadeSlideIn .8s .1s ease both; }
+    #hero h1 { animation: fadeSlideIn .8s .2s ease both; }
+    .hero-sub { animation: fadeSlideIn .8s .35s ease both; }
+    .hero-btns { animation: fadeSlideIn .8s .5s ease both; }
+    .hero-stats { animation: fadeSlideIn .8s .65s ease both; }
+    @keyframes fadeSlideIn { from { opacity:0; transform: translateY(20px); } to { opacity:1; transform: none; } }
+
+    /* FORM section gradient animation */
+    #form-section { background: linear-gradient(140deg, var(--blue) 0%, #0a4f7e 30%, #044275 60%, #0b6aaa 100%);
+      background-size: 300% 300%; animation: heroGradient 12s ease infinite; }
+
+    /* COUNTER */
+    .counter { display: inline-block; }
+
+    /* FLOATING BTNS bounce on appear */
+    .float-btns { animation: floatAppear 1s 1.5s cubic-bezier(.16,1,.3,1) both; }
+    @keyframes floatAppear { from { opacity:0; transform: translateY(40px) scale(.8); } to { opacity:1; transform: none; } }
+
+    /* MEDIA */
+    @media (max-width: 960px) {
+      .nav-links, nav .btn-nav { display: none; }
+      .burger { display: flex; }
+      .hero-wrap { grid-template-columns: 1fr; }
+      .hero-card { display: none; }
+      .mobile-fin { display: block; }
+      .hero-stats { grid-template-columns: repeat(2, 1fr); }
+      .cards-grid { grid-template-columns: repeat(2, 1fr); }
+      .packages-grid { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto; }
+      .neuro-grid { grid-template-columns: 1fr; }
+      .method-wrap { grid-template-columns: 1fr; }
+      .attest-grid { grid-template-columns: 1fr; }
+      .steps-wrap { grid-template-columns: 1fr; gap: 40px; }
+      .founder-grid { grid-template-columns: 1fr; }
+      .founder-photo { max-width: 280px; margin: 0 auto; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .form-trust { flex-direction: column; gap: 12px; }
+    }
+    @media (max-width: 640px) {
+      section { padding: 56px 0; }
+      .cards-grid { grid-template-columns: 1fr; }
+      .benefits-grid { grid-template-columns: 1fr; }
+      .hero-stats { grid-template-columns: 1fr 1fr; gap: 14px; }
+      .hero-stat-num { font-size: 1.45rem; }
+      .form-row { grid-template-columns: 1fr; }
+      .contact-row { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .float-btns { bottom: 72px; right: 14px; }
+      .float-btn { width: 46px; height: 46px; font-size: 1.15rem; }
+      .scroll-top { bottom: 72px; left: 14px; width: 48px; height: 48px; }
+      .sources-row { gap: 6px; }
+      .src-badge { font-size: .78rem; padding: 5px 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#hero" class="logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#F07D19" stroke-width="2"/><path d="M6 9c2.5 3 2.5 3 0 6M18 9c-2.5 3-2.5 3 0 6" stroke="white" stroke-width="1.5"/></svg>
+      </div>
+      <div class="logo-text">Первая Школа<br>Тенниса <small>Франшиза</small></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#why">О франшизе</a></li>
+      <li><a href="#partner">Партнёру</a></li>
+      <li><a href="#packages">Пакеты</a></li>
+      <li><a href="#steps">Как открыть</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Контакты</a></li>
+    </ul>
+    <a href="#form-section" class="btn btn-orange btn-nav" style="flex-shrink:0;">Хочу открыть школу</a>
+    <button class="burger" aria-label="Меню" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#why" onclick="closeMenu()">О франшизе</a>
+  <a href="#partner" onclick="closeMenu()">Партнёру</a>
+  <a href="#packages" onclick="closeMenu()">Пакеты</a>
+  <a href="#steps" onclick="closeMenu()">Как открыть</a>
+  <a href="#faq" onclick="closeMenu()">FAQ</a>
+  <a href="#contact" onclick="closeMenu()">Контакты</a>
+  <a href="#form-section" class="btn btn-orange btn-full" onclick="closeMenu()">Хочу открыть школу</a>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-particle"></div><div class="hero-particle"></div><div class="hero-particle"></div><div class="hero-particle"></div><div class="hero-particle"></div>
+  <div class="container">
+    <div class="hero-wrap">
+      <div>
+        <span class="hero-tag">Франшиза теннисной школы · Бренд «Первая Школа Тенниса» · 10+ лет</span>
+        <h1>Вы заходите в поток,<br><em>а не начинаете с нуля</em></h1>
+        <p class="hero-sub">CRM, поток заявок, методика обучения, нейропродавец 24/7 — уже работают. Открывайте и зарабатывайте от 200 000 ₽ в месяц.</p>
+        <div class="hero-btns">
+          <a href="#form-section" class="btn btn-orange btn-lg">Хочу открыть школу в своём городе</a>
+          <a href="#form-section" class="btn btn-ghost btn-lg">Скачать финмодель</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-num"><span class="counter" data-target="200000" data-suffix=" ₽">200 000 ₽</span></span>
+            <span class="hero-stat-label">чистая прибыль<br>в месяц</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">3–6 мес.</span>
+            <span class="hero-stat-label">срок<br>окупаемости</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num"><span class="counter" data-target="8000" data-suffix=" ₽">8 000 ₽</span></span>
+            <span class="hero-stat-label">средний чек<br>в месяц</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">10+ лет</span>
+            <span class="hero-stat-label">опыт бренда<br>на рынке</span>
+          </div>
+        </div>
+
+        <!-- MOBILE FINANCE (visible < 960px) -->
+        <div class="mobile-fin">
+          <div class="mobile-fin-row"><span>Прибыль с 1 группы</span><strong>30–46 000 ₽</strong></div>
+          <div class="mobile-fin-row"><span>С 4–6 групп</span><strong>200 000+ ₽</strong></div>
+          <div class="mobile-fin-row"><span>Затраты</span><strong>≈ 50 000 ₽</strong></div>
+          <a href="#form-section" class="btn btn-orange btn-full">Получить расчёт под свой город</a>
+        </div>
+      </div>
+
+      <!-- DESKTOP FINANCE CARD -->
+      <div class="hero-card">
+        <div class="hero-card-title">💰 Финансовая модель</div>
+        <div class="fin-row"><span class="fin-label">Средний чек</span><span class="fin-val accent">8 000 ₽/мес</span></div>
+        <div class="fin-row"><span class="fin-label">Группа (8–12 детей)</span><span class="fin-val">80 000–96 000 ₽</span></div>
+        <div class="fin-row"><span class="fin-label">Затраты (аренда+зарплата)</span><span class="fin-val">≈ 50 000 ₽</span></div>
+        <div class="fin-row"><span class="fin-label">Прибыль с 1 группы</span><span class="fin-val accent">30–46 000 ₽</span></div>
+        <div class="fin-row"><span class="fin-label">С 4–6 групп</span><span class="fin-val accent" style="font-size:1.25rem;">200 000+ ₽</span></div>
+        <a href="#form-section" class="btn btn-orange">Получить расчёт под свой город</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY TENNIS -->
+<section id="why">
+  <div class="container">
+    <span class="tag">Почему теннис</span>
+    <h2 class="section-title">Лучшая ниша для детского спорта</h2>
+    <p class="section-sub">Пока футбол и плавание переполнены — теннис остаётся незанятым и маржинальным сегментом в большинстве городов России.</p>
+    <div class="cards-grid">
+      <div class="card reveal"><div class="card-icon">🎾</div><h3>Дефицит предложения</h3><p>В большинстве городов до 500 000 жителей нет ни одной профессиональной детской теннисной школы — место свободно.</p></div>
+      <div class="card reveal"><div class="card-icon">💰</div><h3>Высокий средний чек</h3><p>8 000 ₽ в месяц на ребёнка — в 2–3 раза выше, чем в футболе или гимнастике. Родители платят без возражений.</p></div>
+      <div class="card reveal"><div class="card-icon">📅</div><h3>Долгие контракты</h3><p>Средний ученик занимается 2–4 года. Стабильный повторяющийся доход, а не разовые продажи.</p></div>
+      <div class="card reveal"><div class="card-icon">🏆</div><h3>Статусный вид спорта</h3><p>Теннис ассоциируется с успехом и дисциплиной — родители готовы вкладывать в лучшее для детей.</p></div>
+      <div class="card reveal"><div class="card-icon">📈</div><h3>Рост рынка</h3><p>Запросы на «теннис для детей» растут на 25–40% в год. Рынок открыт — конкурентов мало.</p></div>
+      <div class="card reveal"><div class="card-icon">🔄</div><h3>Масштабируемость</h3><p>Один партнёр управляет несколькими кортами в разных районах — без пропорционального роста затрат.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNER -->
+<section id="partner">
+  <div class="container">
+    <span class="tag">Что вы получаете</span>
+    <h2 class="section-title">10 вещей, которые вы получаете сразу</h2>
+    <p class="section-sub">Не обещания — готовая работающая система. Вы не строите с нуля, вы входите в поток.</p>
+    <div class="benefits-grid">
+      <div class="benefit reveal"><span class="b-num">01</span><div><div class="b-title">Готовый поток заявок</div><div class="b-sub">ВКонтакте, Авито, bolshoitennis.ru, Яндекс, Google, 2ГИС — реклама уже работает</div></div></div>
+      <div class="benefit reveal"><span class="b-num">02</span><div><div class="b-title">Нейропродавец 24/7</div><div class="b-sub">AI-ассистент сам отвечает, квалифицирует и ведёт клиента к записи без менеджера</div></div></div>
+      <div class="benefit reveal"><span class="b-num">03</span><div><div class="b-title">CRM с настроенными процессами</div><div class="b-sub">Воронка продаж, скрипты, автозадачи и аналитика — всё под ключ</div></div></div>
+      <div class="benefit reveal"><span class="b-num">04</span><div><div class="b-title">Методика «8 тренировок — и ты теннисист»</div><div class="b-sub">Измеримый результат для родителей повышает конверсию в абонемент</div></div></div>
+      <div class="benefit reveal"><span class="b-num">05</span><div><div class="b-title">Корт с ремонтом на 1 500 000 ₽</div><div class="b-sub">Уже вложено и готово — вы заходите в WOW-локацию, а не в стройку</div></div></div>
+      <div class="benefit reveal"><span class="b-num">06</span><div><div class="b-title">Аттестация по 21 параметру</div><div class="b-sub">«Дневничок победителя» — инструмент удержания, который ценят родители</div></div></div>
+      <div class="benefit reveal"><span class="b-num">07</span><div><div class="b-title">Соревновательная лига liga-stf.ru</div><div class="b-sub">Ученики не уходят: у них есть цель, турниры и сообщество</div></div></div>
+      <div class="benefit reveal"><span class="b-num">08</span><div><div class="b-title">Скрипты и стандарты найма тренеров</div><div class="b-sub">Без хаоса на старте: кого брать, как обучать, как мотивировать</div></div></div>
+      <div class="benefit reveal"><span class="b-num">09</span><div><div class="b-title">Поддержка управляющей компании</div><div class="b-sub">Менеджер сопровождения, чек-листы, еженедельные созвоны — вы не один</div></div></div>
+      <div class="benefit reveal"><span class="b-num">10</span><div><div class="b-title">Бренд с историей 10+ лет</div><div class="b-sub">VK 4 500 подписчиков, Instagram 3 700 — репутацию не нужно строить с нуля</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP after Partner -->
+<div class="cta-strip reveal">
+  <div class="container text-center">
+    <p>Всё это — уже готово и работает. Осталось запустить в вашем городе.</p>
+    <a href="#form-section" class="btn btn-orange btn-lg">Узнать условия для своего города</a>
+  </div>
+</div>
+
+<!-- NEURO -->
+<section id="neuro">
+  <div class="container">
+    <div class="neuro-grid">
+      <div>
+        <span class="tag">Технологии</span>
+        <h2 class="section-title">Нейропродавец 24/7</h2>
+        <p class="section-sub">Пока вы спите — AI-ассистент отвечает на сообщения, отрабатывает возражения и записывает детей на пробный урок.</p>
+        <div class="neuro-features">
+          <div class="nf reveal"><div class="nf-icon">⚡</div><div><h4>Отвечает мгновенно</h4><p>Скорость ответа менее 30 секунд в любое время суток</p></div></div>
+          <div class="nf reveal"><div class="nf-icon">🎯</div><div><h4>Квалифицирует клиента</h4><p>Узнаёт возраст ребёнка, цель и удобное время занятий</p></div></div>
+          <div class="nf reveal"><div class="nf-icon">📆</div><div><h4>Записывает на урок</h4><p>Ведёт до записи на пробное занятие без участия менеджера</p></div></div>
+        </div>
+      </div>
+      <div class="chat-box reveal-scale">
+        <div class="bubble bubble-user"><div class="bubble-label">Клиент, 22:47</div>Здравствуйте, хочу записать дочку на теннис. Ей 7 лет.</div>
+        <div class="bubble bubble-bot"><div class="bubble-label">Нейропродавец ПШТ</div>Отлично! Для 7 лет у нас группа по воскресеньям. Первое занятие бесплатно. Удобно в 10:00 или 12:00?</div>
+        <div class="bubble bubble-user"><div class="bubble-label">Клиент</div>В 10 было бы хорошо!</div>
+        <div class="bubble bubble-bot"><div class="bubble-label">Нейропродавец ПШТ</div>Записала на воскресенье в 10:00! Пришлю адрес и напомню за день ✓</div>
+        <div class="chat-badge"><div class="chat-dot"></div>Нейропродавец онлайн · отвечает за 30 сек</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METHOD -->
+<section id="method">
+  <div class="container">
+    <span class="tag">Методика</span>
+    <h2 class="section-title">«8 тренировок — и ты теннисист»</h2>
+    <p class="section-sub">Измеримый результат с первого месяца. Родители видят прогресс — и продлевают абонемент сами.</p>
+    <div class="method-wrap">
+      <div>
+        <span class="method-badge">Авторская методика ПШТ</span>
+        <p style="color:var(--text-muted); font-size:.93rem; line-height:1.7; margin-bottom:0;">Большинство школ обещают «научим играть». Мы обещаем конкретное: после 8 тренировок ребёнок уверенно держит ракетку, отбивает мячи и понимает правила игры.</p>
+        <div class="method-steps">
+          <div class="ms reveal"><div class="ms-num">1–2</div><div class="ms-text">Знакомство с ракеткой и мячом. Базовые стойки и хваты.</div></div>
+          <div class="ms reveal"><div class="ms-num">3–4</div><div class="ms-text">Первые удары: форхенд и бэкхенд с тренером у стены.</div></div>
+          <div class="ms reveal"><div class="ms-num">5–6</div><div class="ms-text">Подача и перебивание через сетку в паре.</div></div>
+          <div class="ms reveal"><div class="ms-num">7–8</div><div class="ms-text">Мини-игра по правилам. Аттестация первых результатов.</div></div>
+        </div>
+      </div>
+      <div class="method-result reveal-right">
+        <h3>Результат для партнёра</h3>
+        <p>Родители видят конкретный прогресс — конверсия из пробного урока в абонемент превышает 70%.</p>
+        <p>Дети мотивированы и не бросают. Средний срок обучения — 2+ года.</p>
+        <div class="method-highlight">Методика передаётся в полном объёме — со сценариями занятий и материалами для тренеров.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ATTEST -->
+<section id="attest">
+  <div class="container">
+    <span class="tag">Удержание учеников</span>
+    <h2 class="section-title">Почему ученики остаются надолго</h2>
+    <p class="section-sub">Уникальные инструменты вовлечённости — всё уже готово для вашего города.</p>
+    <div class="attest-grid">
+      <div class="attest-card reveal">
+        <div class="attest-big"><span class="counter" data-target="21">21</span></div>
+        <div class="attest-title">Параметр аттестации</div>
+        <p style="color:var(--text-muted); font-size:.9rem; line-height:1.7; margin-bottom:0;">Каждые 2 месяца ребёнок проходит аттестацию: удар, подача, выносливость, тактика и другие навыки.</p>
+        <div class="checklist">
+          <div class="ci"><span class="ci-tick">✓</span> Родители получают подробный отчёт о прогрессе</div>
+          <div class="ci"><span class="ci-tick">✓</span> «Дневничок победителя» с личными достижениями</div>
+          <div class="ci"><span class="ci-tick">✓</span> Мотивация: ребёнку есть к чему стремиться</div>
+          <div class="ci"><span class="ci-tick">✓</span> Снижает отток в 2 раза против школ без аттестации</div>
+        </div>
+      </div>
+      <div class="attest-card reveal">
+        <div class="attest-big" style="color:var(--blue); font-size:2.4rem;">🏆 Лига</div>
+        <div class="attest-title">Соревновательная лига</div>
+        <p style="color:var(--text-muted); font-size:.9rem; line-height:1.7; margin-bottom:0;">Ученики участвуют в турнирах теннисной лиги. Это сообщество, а не просто занятия.</p>
+        <div class="checklist">
+          <div class="ci"><span class="ci-tick">✓</span> Регулярные турниры для всех уровней подготовки</div>
+          <div class="ci"><span class="ci-tick">✓</span> Рейтинговая таблица мотивирует тренироваться</div>
+          <div class="ci"><span class="ci-tick">✓</span> Сарафанное радио: родители рекомендуют знакомым</div>
+          <div class="ci"><span class="ci-tick">✓</span><span>Сайт лиги: <a href="https://liga-stf.ru" target="_blank" rel="noopener" style="color:var(--blue); font-weight:600;">liga-stf.ru</a></span></div>
+        </div>
+        <a href="https://liga-stf.ru" target="_blank" rel="noopener" class="league-btn">Перейти на liga-stf.ru →</a>
+      </div>
+    </div>
+    <div class="sources-strip reveal-scale">
+      <div class="sources-title">Откуда идут заявки — готовые каналы</div>
+      <div class="sources-row">
+        <span class="src-badge">ВКонтакте · 4 500 подп.</span>
+        <span class="src-badge">Instagram · 3 700 подп.</span>
+        <span class="src-badge">Авито Услуги</span>
+        <span class="src-badge">bolshoitennis.ru</span>
+        <span class="src-badge">Яндекс.Реклама</span>
+        <span class="src-badge">Google Ads</span>
+        <span class="src-badge">2ГИС · рейтинг 4.9★</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER -->
+<section id="founder">
+  <div class="container">
+    <span class="tag">Команда</span>
+    <h2 class="section-title">Кто стоит за франшизой</h2>
+    <p class="section-sub">Вы не покупаете лицензию у корпорации. Вы становитесь партнёром человека, который построил эту систему своими руками.</p>
+    <div class="founder-grid">
+      <div class="founder-photo reveal-left">👤</div>
+      <div class="reveal-right">
+        <div class="founder-name">[Имя Фамилия]</div>
+        <div class="founder-role">Основатель «Первой Школы Тенниса» · Предприниматель · Тренер</div>
+        <p class="founder-text">Более 10 лет в теннисном бизнесе. Построил школу, которая работает как часы: CRM, нейропродавец, методика, аттестация — каждый элемент системы проверен на практике и даёт результат.</p>
+        <p class="founder-text">Обучил десятки тренеров, вывел сотни детей на корт. Теперь помогает партнёрам запустить такой же бизнес в своём городе.</p>
+        <div class="founder-quote">«Я строил эту систему 10 лет. Теперь вы можете зайти в неё за 3 недели.»</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section id="packages">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:48px;">
+      <span class="tag" style="text-align:center; display:block;">Пакеты франшизы</span>
+      <h2 class="section-title">Выберите подходящий формат</h2>
+      <p class="section-sub mx-auto" style="text-align:center;">Все пакеты включают методику, CRM и нейропродавца. Разница — в объёме поддержки и эксклюзиве территории.</p>
+    </div>
+    <div class="packages-grid">
+      <div class="pkg reveal">
+        <div class="pkg-name">Старт</div>
+        <div class="pkg-price">от 350 000 ₽ <span>паушальный взнос</span></div>
+        <div class="pkg-royalty">Роялти: 5% от выручки · от 15 000 ₽/мес</div>
+        <div class="pkg-features">
+          <div class="pkg-feature"><span class="pkg-check">✓</span> Лицензия на бренд ПШТ</div>
+          <div class="pkg-feature"><span class="pkg-check">✓</span> Методика «8 тренировок»</div>
+          <div class="pkg-feature"><span class="pkg-check">✓</span> CRM-система под ключ</div>
+          <div class="pkg-feature"><span class="pkg-check">✓</span> Нейропродавец 24/7</div>
+          <div class="pkg-feature"><span class="pkg-check">✓</span> Стандарты найма и скрипты</div>
+          <div class="pkg-feature"><span class="pkg-check">✓</span> 3 месяца поддержки УК</div>
+        </div>
+        <a href="#form-section" class="btn btn-outline btn-full">Уточнить условия</a>
+      </div>
+      <div class="pkg featured reveal">
+        <div class="pkg-badge">Популярный</div>
+        <div class="pkg-name">Стандарт</div>
+        <div class="pkg-price">от 550 000 ₽ <span>паушальный взнос</span></div>
+        <div class="pkg-royalty">Роялти: 4% от выручки · от 12 000 ₽/мес</div>
+        <div class="pkg-features">
+          <div class="pkg-feature"><span class="pkg-check">✓</span> Всё из пакета «Старт»</div>
+          <div class="pkg-feature"><span class="pkg-check">✓</span> Эксклюзивная территория</div>
+          <div class="pkg-feature"><span class="pkg-check">✓</span> Настройка рекламы под город</div>
+          <div class="pkg-feature"><span class="pkg-check">✓</span> SMM-кит и шаблоны соцсетей</div>
+          <div class="pkg-feature"><span class="pkg-check">✓</span> 6 месяцев поддержки УК</div>
+          <div class="pkg-feature"><span class="pkg-check">✓</span> Ежемесячный аудит показателей</div>
+        </div>
+        <a href="#form-section" class="btn btn-orange btn-full">Хочу открыть школу</a>
+      </div>
+      <div class="pkg reveal">
+        <div class="pkg-name">Премиум</div>
+        <div class="pkg-price">от 900 000 ₽ <span>паушальный взнос</span></div>
+        <div class="pkg-royalty">Роялти: 3% от выручки · индивидуально</div>
+        <div class="pkg-features">
+          <div class="pkg-feature"><span class="pkg-check">✓</span> Всё из пакета «Стандарт»</div>
+          <div class="pkg-feature"><span class="pkg-check">✓</span> Эксклюзив на регион</div>
+          <div class="pkg-feature"><span class="pkg-check">✓</span> Открытие «под ключ»</div>
+          <div class="pkg-feature"><span class="pkg-check">✓</span> Выезд команды на запуск</div>
+          <div class="pkg-feature"><span class="pkg-check">✓</span> 12 месяцев поддержки УК</div>
+          <div class="pkg-feature"><span class="pkg-check">✓</span> Личный менеджер проекта</div>
+        </div>
+        <a href="#form-section" class="btn btn-blue btn-full">Уточнить условия</a>
+      </div>
+    </div>
+    <div class="scarcity reveal">
+      <p>В вашем городе место пока свободно — узнайте условия</p>
+      <a href="#form-section" class="btn btn-orange">Проверить свой город</a>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section id="steps">
+  <div class="container">
+    <div class="steps-wrap">
+      <div>
+        <span class="tag">Как открыть</span>
+        <h2 class="section-title">5 шагов от заявки до первых учеников</h2>
+        <p class="section-sub" style="margin-bottom:0;">Мы прошли этот путь 10+ раз. Знаем, где ловушки — и помогаем их обойти.</p>
+      </div>
+      <div class="steps-list">
+        <div class="steps-line"></div>
+        <div class="step reveal"><div class="step-num">1</div><div class="step-body"><div class="step-title">Заявка и знакомство</div><p class="step-text">Оставляете заявку, мы созваниваемся, рассказываем детали, отвечаем на вопросы и передаём финансовую модель.</p><span class="step-dur">1–3 дня</span></div></div>
+        <div class="step reveal"><div class="step-num">2</div><div class="step-body"><div class="step-title">Подписание договора</div><p class="step-text">Изучаете оферту, юрист проверяет документы. Подписываем договор и открываем доступ к материалам.</p><span class="step-dur">3–7 дней</span></div></div>
+        <div class="step reveal"><div class="step-num">3</div><div class="step-body"><div class="step-title">Подготовка к запуску</div><p class="step-text">Настраиваем CRM, рекламу и нейропродавца под ваш город. Обучаем вас и тренеров методике.</p><span class="step-dur">2–3 недели</span></div></div>
+        <div class="step reveal"><div class="step-num">4</div><div class="step-body"><div class="step-title">Набор первой группы</div><p class="step-text">Запускаем рекламу — начинают поступать заявки. Нейропродавец записывает детей автоматически.</p><span class="step-dur">1–2 недели</span></div></div>
+        <div class="step reveal"><div class="step-num">5</div><div class="step-body"><div class="step-title">Первые тренировки и прибыль</div><p class="step-text">Дети занимаются, родители платят абонементы. Вы управляете — мы поддерживаем.</p><span class="step-dur">Прибыль уже в 1-й месяц</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:48px;">
+      <span class="tag" style="text-align:center; display:block;">Частые вопросы</span>
+      <h2 class="section-title">Что вас интересует?</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)">Нужен ли опыт в теннисе или спорте?<span class="faq-arr">▾</span></button><div class="faq-a"><div class="faq-a-inner">Нет. Партнёр — управленец и владелец бизнеса, а не тренер. Тренеров вы нанимаете по нашим стандартам. Главное — желание строить бизнес и работать с командой.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)">Сколько стоит открытие с нуля?<span class="faq-arr">▾</span></button><div class="faq-a"><div class="faq-a-inner">Паушальный взнос — от 350 000 ₽. Дополнительно: аренда корта, инвентарь, первые зарплаты. Суммарные инвестиции — от 700 000 до 1 500 000 ₽. Мы помогаем с финансовой моделью и переговорами по аренде.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)">Как быстро окупятся вложения?<span class="faq-arr">▾</span></button><div class="faq-a"><div class="faq-a-inner">При правильном запуске — за 3–6 месяцев. Это реально благодаря высокому чеку (8 000 ₽), готовому потоку заявок и нейропродавцу. В 1-й месяц вы уже получаете выручку.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)">Где брать тренеров? Нужна специальная квалификация?<span class="faq-arr">▾</span></button><div class="faq-a"><div class="faq-a-inner">Мы даём стандарты найма и профиль кандидата. Тренер должен иметь опыт в теннисе — но это может быть бывший спортсмен-любитель с энтузиазмом к работе с детьми. Методике обучаем сами.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)">В моём городе уже есть теннисные школы — это проблема?<span class="faq-arr">▾</span></button><div class="faq-a"><div class="faq-a-inner">Конкуренция есть везде, но у ПШТ уникальные преимущества: методика с измеримым результатом, нейропродавец 24/7, аттестация по 21 параметру и лига. Этого нет у большинства местных школ.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)">Работаете только в Саратове или по всей России?<span class="faq-arr">▾</span></button><div class="faq-a"><div class="faq-a-inner">Франшиза масштабируется на любой город России. Минимальный порог — от 80 000 жителей. Реклама и нейропродавец настраиваются под ваш город. Пакеты «Стандарт» и «Премиум» дают эксклюзивную территорию.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT — quick feedback form -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-wrap">
+      <div class="text-center" style="margin-bottom:40px;">
+        <span class="tag" style="text-align:center; display:block;">Обратная связь</span>
+        <h2 class="section-title">Остались вопросы? Напишите нам</h2>
+        <p class="section-sub mx-auto" style="text-align:center;">Ответим в течение дня. Расскажем подробности, пришлём материалы или просто поговорим о бизнесе.</p>
+      </div>
+      <div id="contact-form-content">
+        <form class="contact-form" onsubmit="submitContact(event)">
+          <div class="contact-row">
+            <div class="contact-field"><label for="c-name">Ваше имя</label><input type="text" id="c-name" name="name" placeholder="Александр" required></div>
+            <div class="contact-field"><label for="c-email">Email</label><input type="email" id="c-email" name="email" placeholder="alex@example.com" autocomplete="email" required></div>
+          </div>
+          <div class="contact-field"><label for="c-msg">Сообщение</label><textarea id="c-msg" name="message" placeholder="Расскажите, что вас интересует..." required></textarea></div>
+          <button type="submit" class="btn btn-blue btn-lg" id="contact-submit-btn" style="margin-top:4px;">Отправить сообщение →</button>
+        </form>
+      </div>
+      <div class="contact-success" id="contact-success">
+        <div class="success-check-wrap">
+          <div class="confetti"></div><div class="confetti"></div><div class="confetti"></div>
+          <div class="confetti"></div><div class="confetti"></div><div class="confetti"></div>
+          <svg viewBox="0 0 80 80">
+            <circle class="success-check-circle" cx="40" cy="40" r="36"/>
+            <polyline class="success-check-tick" points="24,42 35,53 56,30"/>
+          </svg>
+        </div>
+        <h3>Сообщение отправлено!</h3>
+        <p>Мы свяжемся с вами в ближайшее время.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section id="form-section">
+  <div class="container">
+    <div class="form-wrap">
+      <div id="form-content">
+        <span class="tag">Начать</span>
+        <h2 class="section-title">Получите предложение сегодня</h2>
+        <p class="section-sub">Оставьте заявку — свяжемся в течение 2 часов, расскажем детали и пришлём финансовую модель.</p>
+        <form onsubmit="submitForm(event)">
+          <div class="form-row">
+            <div class="form-field"><label for="f-name">Имя</label><input type="text" id="f-name" name="name" placeholder="Александр" autocomplete="name" required></div>
+            <div class="form-field"><label for="f-phone">Телефон</label><input type="tel" id="f-phone" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" required></div>
+          </div>
+          <div class="form-row">
+            <div class="form-field"><label for="f-city">Город</label><input type="text" id="f-city" name="city" placeholder="Ваш город" required></div>
+            <div class="form-field"><label for="f-budget">Бюджет</label>
+              <select id="f-budget" name="budget"><option value="">Выберите</option><option>до 500 000 ₽</option><option>500 000 — 1 000 000 ₽</option><option>более 1 000 000 ₽</option></select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-orange btn-full btn-lg" id="submit-btn" style="margin-top:8px;">Хочу открыть школу в своём городе →</button>
+          <p class="form-note">Нажимая кнопку, вы соглашаетесь с <a href="#" onclick="document.getElementById('privacy-modal').style.display='flex'; return false;">политикой конфиденциальности</a>. Не занимаемся спамом.</p>
+        </form>
+        <div class="form-trust">
+          <div class="trust-item"><span class="trust-icon">⏱</span> Ответим за 2 часа</div>
+          <div class="trust-item"><span class="trust-icon">🔒</span> Данные защищены</div>
+          <div class="trust-item"><span class="trust-icon">📋</span> Пришлём финмодель</div>
+        </div>
+      </div>
+      <div class="form-success" id="form-success">
+        <div class="success-check-wrap" style="margin-bottom:20px;">
+          <div class="confetti"></div><div class="confetti"></div><div class="confetti"></div>
+          <div class="confetti"></div><div class="confetti"></div><div class="confetti"></div>
+          <svg viewBox="0 0 80 80">
+            <circle class="success-check-circle" cx="40" cy="40" r="36" style="stroke:var(--orange);"/>
+            <polyline class="success-check-tick" points="24,42 35,53 56,30" style="stroke:var(--orange);"/>
+          </svg>
+        </div>
+        <div class="success-title">Заявка принята!</div>
+        <p class="success-sub">Свяжемся в течение 2 часов. Пока ждёте — напишите в WhatsApp, там отвечаем быстрее.</p>
+        <a href="https://wa.me/78452700051" class="btn btn-white btn-lg" style="margin-top:24px;" target="_blank" rel="noopener">Написать в WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" style="margin-bottom:0;">
+          <div class="logo-icon" style="background:rgba(255,255,255,.1);">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#F07D19" stroke-width="2"/><path d="M6 9c2.5 3 2.5 3 0 6M18 9c-2.5 3-2.5 3 0 6" stroke="white" stroke-width="1.5"/></svg>
+          </div>
+          <div class="logo-text" style="color:white;">Первая Школа<br>Тенниса</div>
+        </div>
+        <p>Франшиза теннисной школы с 10-летней историей. Бренд «Первая Школа Тенниса» работает по всей России.</p>
+        <p style="margin-top:8px; font-size:.8rem;">ИП / ООО · ОГРН — указать · ИНН — указать</p>
+      </div>
+      <div class="footer-col">
+        <h4>О франшизе</h4>
+        <ul>
+          <li><a href="#why">Почему теннис</a></li>
+          <li><a href="#partner">Что вы получаете</a></li>
+          <li><a href="#packages">Пакеты</a></li>
+          <li><a href="#steps">Как открыть</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <div class="footer-contact"><a href="tel:+78452700051">+7 (8452) 70-00-51</a></div>
+        <div class="footer-contact">
+          <a href="https://wa.me/78452700051" target="_blank" rel="noopener">WhatsApp</a> ·
+          <a href="https://t.me/pshtenis" target="_blank" rel="noopener">Telegram</a>
+        </div>
+        <div class="footer-contact" style="margin-top:8px;"><a href="https://bolshoitennis.ru" target="_blank" rel="noopener">bolshoitennis.ru</a></div>
+        <div class="footer-contact"><a href="https://liga-stf.ru" target="_blank" rel="noopener">liga-stf.ru</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 Первая Школа Тенниса. Все права защищены.</div>
+      <div class="footer-legal">Сайт носит информационный характер и не является публичной офертой.</div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="float-btns">
+  <a href="https://wa.me/78452700051" class="float-btn float-wa" title="WhatsApp" target="_blank" rel="noopener">💬</a>
+  <a href="https://t.me/pshtenis" class="float-btn float-tg" title="Telegram" target="_blank" rel="noopener">✈️</a>
+</div>
+
+<!-- PRIVACY MODAL -->
+<div class="privacy-modal" id="privacy-modal" onclick="if(event.target===this)this.style.display='none'">
+  <div class="privacy-content">
+    <button class="privacy-close" onclick="document.getElementById('privacy-modal').style.display='none'">&times;</button>
+    <h3>Политика конфиденциальности</h3>
+    <p><strong>ИП / ООО «Первая Школа Тенниса»</strong> (далее — Оператор) обрабатывает персональные данные в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных».</p>
+    <p><strong>Какие данные мы собираем:</strong> имя, номер телефона, электронная почта, город проживания — только те данные, которые вы добровольно указываете в формах на сайте.</p>
+    <p><strong>Цель обработки:</strong> связь с вами для консультации по условиям франшизы, отправка коммерческого предложения и финансовой модели.</p>
+    <p><strong>Как мы храним данные:</strong> данные хранятся на защищённых серверах CRM-системы. Мы не передаём ваши данные третьим лицам без вашего согласия, за исключением случаев, предусмотренных законодательством РФ.</p>
+    <p><strong>Срок хранения:</strong> персональные данные хранятся до момента отзыва согласия. Вы можете отозвать согласие, написав на email или позвонив по телефону, указанному на сайте.</p>
+    <p><strong>Ваши права:</strong> вы имеете право запросить информацию о ваших данных, потребовать их изменения или удаления, обратившись к Оператору.</p>
+    <p style="margin-top:20px;"><strong>Контакты Оператора:</strong><br>Телефон: <a href="tel:+78452700051" style="color:var(--blue);">+7 (8452) 70-00-51</a><br>Сайт: bolshoitennis.ru</p>
+    <button class="btn btn-blue" style="margin-top:16px;" onclick="document.getElementById('privacy-modal').style.display='none'">Понятно</button>
+  </div>
+</div>
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top" id="scroll-top" aria-label="Наверх">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<!-- STICKY CTA -->
+<div class="sticky-cta" id="sticky-cta">
+  <a href="#form-section" class="btn btn-orange btn-full">Хочу открыть школу в своём городе →</a>
+</div>
+
+<script>
+  // MENU — animated burger ↔ X
+  function toggleMenu() {
+    document.getElementById('mobile-menu').classList.toggle('open');
+    document.querySelector('.burger').classList.toggle('active');
+  }
+  function closeMenu() {
+    document.getElementById('mobile-menu').classList.remove('open');
+    document.querySelector('.burger').classList.remove('active');
+  }
+
+  // SMOOTH SCROLL — all anchor links with nav offset
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      const id = this.getAttribute('href');
+      if (id === '#') return;
+      const target = document.querySelector(id);
+      if (!target) return;
+      e.preventDefault();
+      const navH = document.querySelector('nav').offsetHeight;
+      const y = target.getBoundingClientRect().top + window.pageYOffset - navH - 12;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+      closeMenu();
+    });
+  });
+
+  // FAQ ACCORDION
+  function toggleFaq(btn) {
+    const ans = btn.parentElement.querySelector('.faq-a');
+    const open = btn.classList.contains('active');
+    document.querySelectorAll('.faq-q.active').forEach(q => {
+      q.classList.remove('active');
+      q.parentElement.querySelector('.faq-a').style.maxHeight = null;
+    });
+    if (!open) { btn.classList.add('active'); ans.style.maxHeight = ans.scrollHeight + 'px'; }
+  }
+
+  // PHONE MASK
+  const phoneInput = document.getElementById('f-phone');
+  if (phoneInput) {
+    phoneInput.addEventListener('input', function() {
+      let v = this.value.replace(/\D/g, '');
+      if (v.startsWith('7') || v.startsWith('8')) v = v.slice(1);
+      let r = '+7';
+      if (v.length > 0) r += ' (' + v.slice(0, 3);
+      if (v.length >= 4) r += ') ' + v.slice(3, 6);
+      if (v.length >= 7) r += '-' + v.slice(6, 8);
+      if (v.length >= 9) r += '-' + v.slice(8, 10);
+      this.value = r;
+    });
+  }
+
+  // FORM SUBMIT — franchise form with animated success
+  function submitForm(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submit-btn');
+    btn.disabled = true; btn.textContent = 'Отправляю...';
+    setTimeout(() => {
+      document.getElementById('form-content').style.display = 'none';
+      document.getElementById('form-success').classList.add('show');
+    }, 1000);
+  }
+
+  // CONTACT FORM SUBMIT — feedback form with SVG checkmark + confetti
+  function submitContact(e) {
+    e.preventDefault();
+    const btn = document.getElementById('contact-submit-btn');
+    btn.disabled = true; btn.textContent = 'Отправляю...';
+    setTimeout(() => {
+      document.getElementById('contact-form-content').style.display = 'none';
+      const success = document.getElementById('contact-success');
+      success.classList.add('show');
+    }, 800);
+  }
+
+  // REVEAL ON SCROLL — with stagger delay for siblings in grids
+  const revObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        revObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale').forEach(el => {
+    // auto-stagger: if element is inside a grid, add delay based on sibling index
+    const parent = el.parentElement;
+    if (parent && (parent.classList.contains('cards-grid') || parent.classList.contains('benefits-grid')
+        || parent.classList.contains('packages-grid') || parent.classList.contains('faq-list'))) {
+      const siblings = Array.from(parent.children);
+      const idx = siblings.indexOf(el);
+      el.style.transitionDelay = (idx * 0.1) + 's';
+    }
+    revObs.observe(el);
+  });
+
+  // STICKY CTA — show/hide with float button offset
+  let heroV = true, formV = false;
+  const stickyEl = document.getElementById('sticky-cta');
+  const floatBtns = document.querySelector('.float-btns');
+  const scrollTopEl = document.getElementById('scroll-top');
+  function updateSticky() {
+    const show = !heroV && !formV;
+    if (stickyEl) stickyEl.classList.toggle('show', show);
+    // shift float buttons and scroll-top above sticky CTA when visible
+    if (floatBtns) floatBtns.style.bottom = show ? '76px' : '';
+    if (scrollTopEl) scrollTopEl.style.bottom = show ? '76px' : '';
+  }
+  new IntersectionObserver(entries => { heroV = entries[0].isIntersecting; updateSticky(); }, { threshold: 0.15 }).observe(document.getElementById('hero'));
+  new IntersectionObserver(entries => { formV = entries[0].isIntersecting; updateSticky(); }, { threshold: 0.15 }).observe(document.getElementById('form-section'));
+
+  // COUNTER ANIMATION
+  function animateCounter(el) {
+    const target = parseInt(el.dataset.target) || 0;
+    const suffix = el.dataset.suffix || '';
+    const duration = 1800;
+    const start = performance.now();
+    function update(now) {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.floor(eased * target).toLocaleString('ru-RU') + suffix;
+      if (progress < 1) requestAnimationFrame(update);
+    }
+    requestAnimationFrame(update);
+  }
+  const counterObs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { animateCounter(e.target); counterObs.unobserve(e.target); } });
+  }, { threshold: 0.3 });
+  document.querySelectorAll('.counter').forEach(el => counterObs.observe(el));
+
+  // PARALLAX — hero particles move on scroll
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        const scrollY = window.pageYOffset;
+        const hero = document.getElementById('hero');
+        if (hero) {
+          hero.querySelectorAll('.hero-particle').forEach((p, i) => {
+            const speed = 0.02 + i * 0.015;
+            p.style.transform = `translateY(${scrollY * speed}px)`;
+          });
+        }
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+
+  // TILT EFFECT on package cards
+  document.querySelectorAll('.pkg').forEach(pkg => {
+    pkg.addEventListener('mousemove', function(e) {
+      const rect = this.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const cx = rect.width / 2;
+      const cy = rect.height / 2;
+      const tiltX = (y - cy) / cy * -3;
+      const tiltY = (x - cx) / cx * 3;
+      this.style.transform = `translateY(-10px) perspective(800px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+    });
+    pkg.addEventListener('mouseleave', function() {
+      this.style.transform = '';
+    });
+  });
+
+  // ACTIVE NAV LINK highlight on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  const navObs = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        navLinks.forEach(link => {
+          link.style.color = link.getAttribute('href') === '#' + id ? 'var(--blue)' : '';
+          link.style.fontWeight = link.getAttribute('href') === '#' + id ? '700' : '';
+        });
+      }
+    });
+  }, { threshold: 0.3, rootMargin: '-80px 0px -50% 0px' });
+  sections.forEach(s => navObs.observe(s));
+
+  // NAV SHRINK on scroll
+  const navEl = document.querySelector('nav');
+  if (navEl) {
+    window.addEventListener('scroll', () => {
+      navEl.classList.toggle('scrolled', window.pageYOffset > 80);
+    }, { passive: true });
+  }
+
+  // SCROLL TO TOP BUTTON — show/hide + click
+  const scrollTopBtn = document.getElementById('scroll-top');
+  if (scrollTopBtn) {
+    window.addEventListener('scroll', () => {
+      scrollTopBtn.classList.toggle('show', window.pageYOffset > 500);
+    }, { passive: true });
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+</script>
+</body>
+</html>
