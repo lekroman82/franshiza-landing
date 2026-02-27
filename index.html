@@ -569,7 +569,7 @@
       .contact-row { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr; gap: 32px; }
       .float-btns { display: none; }
-      .scroll-top { bottom: 24px; left: 14px; width: 44px; height: 44px; }
+      .scroll-top { left: 14px; width: 44px; height: 44px; }
       .sources-row { gap: 6px; }
       .src-badge { font-size: .78rem; padding: 5px 12px; }
     }
@@ -1195,7 +1195,7 @@
     if (stickyEl) stickyEl.classList.toggle('show', show);
     // shift float buttons and scroll-top above sticky CTA when visible
     if (floatBtns) floatBtns.style.bottom = show ? '76px' : '';
-    if (scrollTopEl) scrollTopEl.style.bottom = show ? '76px' : '';
+    if (scrollTopEl) scrollTopEl.style.bottom = show ? '100px' : '';
   }
   new IntersectionObserver(entries => { heroV = entries[0].isIntersecting; updateSticky(); }, { threshold: 0.15 }).observe(document.getElementById('hero'));
   new IntersectionObserver(entries => { formV = entries[0].isIntersecting; updateSticky(); }, { threshold: 0.15 }).observe(document.getElementById('form-section'));
