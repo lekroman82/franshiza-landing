@@ -5,14 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Франшиза «Первая Школа Тенниса» — прибыль от 200 000 ₽/мес</title>
   <meta name="description" content="Франшиза теннисной школы: прибыль от 200 000 ₽/мес, окупаемость 3–6 месяцев, готовый поток клиентов. 10+ лет опыта.">
+  <meta name="yandex-verification" content="3b900a9504125ec2" />
+  <meta name="google-site-verification" content="kF0ePX8WbMSCexPM-XJNxmIPZEsaC3R8IuKAV0EmMSg" />
   <meta property="og:title" content="Франшиза «Первая Школа Тенниса» — прибыль от 200 000 ₽/мес">
   <meta property="og:description" content="Вы заходите в поток, а не начинаете с нуля. CRM, заявки, методика — уже работают.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Первая Школа Тенниса">
-  <meta property="og:image" content="https://bolshoitennis.ru/og-image.png">
-  <meta property="og:url" content="https://bolshoitennis.ru">
-  <link rel="canonical" href="https://bolshoitennis.ru">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23055F96'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23F07D19' stroke-width='2.5'/%3E%3Cpath d='M8.5 12 Q12 16 8.5 20M23.5 12 Q20 16 23.5 20' fill='none' stroke='white' stroke-width='1.8'/%3E%3C/svg%3E">
+  <meta property="og:image" content="https://franshiza.bolshoitennis.ru/og-image.png">
+  <meta property="og:url" content="https://franshiza.bolshoitennis.ru">
+  <link rel="canonical" href="https://franshiza.bolshoitennis.ru">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -391,6 +397,20 @@
     .footer-copy { font-size: .8rem; }
     .footer-legal { font-size: .78rem; text-align: right; }
 
+    /* COOKIE */
+    .cookie-bar { position: fixed; bottom: 16px; left: 16px; z-index: 950;
+      max-width: 340px; background: white; border-radius: var(--radius);
+      box-shadow: 0 4px 24px rgba(0,0,0,.15); padding: 14px 18px;
+      display: flex; align-items: center; gap: 12px;
+      font-size: .82rem; line-height: 1.4; color: var(--text);
+      animation: floatAppear .6s ease both; }
+    .cookie-bar a { color: var(--blue); text-decoration: underline; }
+    .cookie-ok { background: var(--blue); color: white; border: none; border-radius: 6px;
+      padding: 6px 16px; font-size: .82rem; cursor: pointer; white-space: nowrap;
+      transition: var(--t); flex-shrink: 0; }
+    .cookie-ok:hover { background: var(--blue-dark); }
+    @media (max-width: 600px) { .cookie-bar { left: 10px; right: 10px; max-width: none; bottom: 72px; } }
+
     /* FLOAT */
     .float-btns { position: fixed; bottom: 88px; right: 22px; z-index: 900;
       display: flex; flex-direction: column; gap: 12px; }
@@ -691,7 +711,7 @@
       <div class="benefit reveal"><span class="b-num">02</span><div><div class="b-title">Нейропродавец 24/7</div><div class="b-sub">AI-ассистент сам отвечает, квалифицирует и ведёт клиента к записи без менеджера</div></div></div>
       <div class="benefit reveal"><span class="b-num">03</span><div><div class="b-title">CRM с настроенными процессами</div><div class="b-sub">Воронка продаж, скрипты, автозадачи и аналитика — всё под ключ</div></div></div>
       <div class="benefit reveal"><span class="b-num">04</span><div><div class="b-title">Методика «8 тренировок — и ты теннисист»</div><div class="b-sub">Измеримый результат для родителей повышает конверсию в абонемент</div></div></div>
-      <div class="benefit reveal"><span class="b-num">05</span><div><div class="b-title">Корт с ремонтом на 1 500 000 ₽</div><div class="b-sub">Уже вложено и готово — вы заходите в WOW-локацию, а не в стройку</div></div></div>
+      <div class="benefit reveal"><span class="b-num">05</span><div><div class="b-title">Помощь с выбором локации</div><div class="b-sub">Поможем подобрать помещение с высокой проходимостью. Объясним требования к площади, инфраструктуре и плотности населения — чтобы клиенты шли сами</div></div></div>
       <div class="benefit reveal"><span class="b-num">06</span><div><div class="b-title">Аттестация по 21 параметру</div><div class="b-sub">«Дневничок победителя» — инструмент удержания, который ценят родители</div></div></div>
       <div class="benefit reveal"><span class="b-num">07</span><div><div class="b-title">Соревновательная лига liga-stf.ru</div><div class="b-sub">Ученики не уходят: у них есть цель, турниры и сообщество</div></div></div>
       <div class="benefit reveal"><span class="b-num">08</span><div><div class="b-title">Скрипты и стандарты найма тренеров</div><div class="b-sub">Без хаоса на старте: кого брать, как обучать, как мотивировать</div></div></div>
@@ -746,7 +766,7 @@
         <p style="color:var(--text-muted); font-size:.93rem; line-height:1.7; margin-bottom:0;">Большинство школ обещают «научим играть». Мы обещаем конкретное: после 8 тренировок ребёнок уверенно держит ракетку, отбивает мячи и понимает правила игры.</p>
         <div class="method-steps">
           <div class="ms reveal"><div class="ms-num">1–2</div><div class="ms-text">Знакомство с ракеткой и мячом. Базовые стойки и хваты.</div></div>
-          <div class="ms reveal"><div class="ms-num">3–4</div><div class="ms-text">Первые удары: форхенд и бэкхенд с тренером у стены.</div></div>
+          <div class="ms reveal"><div class="ms-num">3–4</div><div class="ms-text">Первые удары: форхенд и бэкхенд с тренером.</div></div>
           <div class="ms reveal"><div class="ms-num">5–6</div><div class="ms-text">Подача и перебивание через сетку в паре.</div></div>
           <div class="ms reveal"><div class="ms-num">7–8</div><div class="ms-text">Мини-игра по правилам. Аттестация первых результатов.</div></div>
         </div>
@@ -818,9 +838,9 @@
       <div class="reveal-right">
         <div class="founder-name">Роман Лекомцев</div>
         <div class="founder-role">Основатель «Первой Школы Тенниса» · Предприниматель · Тренер</div>
-        <p class="founder-text">Более 10 лет в теннисном бизнесе. Построил школу, которая работает как часы: CRM, нейропродавец, методика, аттестация — каждый элемент системы проверен на практике и даёт результат.</p>
+        <p class="founder-text">Более 20 лет в теннисном бизнесе. Построил школу, которая работает как часы: CRM, нейропродавец, методика, аттестация — каждый элемент системы проверен на практике и даёт результат.</p>
         <p class="founder-text">Обучил десятки тренеров, вывел сотни детей на корт. Теперь помогает партнёрам запустить такой же бизнес в своём городе.</p>
-        <div class="founder-quote">«Я строил эту систему 10 лет. Теперь вы можете зайти в неё за 3 недели.»</div>
+        <div class="founder-quote">«Я строил эту систему 20 лет. Теперь вы можете зайти в неё за 3 недели.»</div>
       </div>
     </div>
   </div>
@@ -838,7 +858,7 @@
       <div class="pkg reveal">
         <div class="pkg-name">Старт</div>
         <div class="pkg-price">от 350 000 ₽ <span>паушальный взнос</span></div>
-        <div class="pkg-royalty">Роялти: 5% от выручки · от 15 000 ₽/мес</div>
+        <div class="pkg-royalty">Роялти: 7% от выручки · от 15 000 ₽/мес</div>
         <div class="pkg-features">
           <div class="pkg-feature"><span class="pkg-check">✓</span> Лицензия на бренд ПШТ</div>
           <div class="pkg-feature"><span class="pkg-check">✓</span> Методика «8 тренировок»</div>
@@ -853,7 +873,7 @@
         <div class="pkg-badge">Популярный</div>
         <div class="pkg-name">Стандарт</div>
         <div class="pkg-price">от 550 000 ₽ <span>паушальный взнос</span></div>
-        <div class="pkg-royalty">Роялти: 4% от выручки · от 12 000 ₽/мес</div>
+        <div class="pkg-royalty">Роялти: 7% от выручки · от 15 000 ₽/мес</div>
         <div class="pkg-features">
           <div class="pkg-feature"><span class="pkg-check">✓</span> Всё из пакета «Старт»</div>
           <div class="pkg-feature"><span class="pkg-check">✓</span> Эксклюзивная территория</div>
@@ -867,7 +887,7 @@
       <div class="pkg reveal">
         <div class="pkg-name">Премиум</div>
         <div class="pkg-price">от 900 000 ₽ <span>паушальный взнос</span></div>
-        <div class="pkg-royalty">Роялти: 3% от выручки · индивидуально</div>
+        <div class="pkg-royalty">Роялти: 7% от выручки · от 15 000 ₽/мес</div>
         <div class="pkg-features">
           <div class="pkg-feature"><span class="pkg-check">✓</span> Всё из пакета «Стандарт»</div>
           <div class="pkg-feature"><span class="pkg-check">✓</span> Эксклюзив на регион</div>
@@ -916,7 +936,7 @@
     </div>
     <div class="faq-list">
       <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)">Нужен ли опыт в теннисе или спорте?<span class="faq-arr">▾</span></button><div class="faq-a"><div class="faq-a-inner">Нет. Партнёр — управленец и владелец бизнеса, а не тренер. Тренеров вы нанимаете по нашим стандартам. Главное — желание строить бизнес и работать с командой.</div></div></div>
-      <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)">Сколько стоит открытие с нуля?<span class="faq-arr">▾</span></button><div class="faq-a"><div class="faq-a-inner">Паушальный взнос — от 350 000 ₽. Дополнительно: аренда корта, инвентарь, первые зарплаты. Суммарные инвестиции — от 700 000 до 1 500 000 ₽. Мы помогаем с финансовой моделью и переговорами по аренде.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)">Сколько стоит открытие с нуля?<span class="faq-arr">▾</span></button><div class="faq-a"><div class="faq-a-inner">Паушальный взнос — от 350 000 ₽. Дополнительно: аренда корта, инвентарь, первые зарплаты. Суммарные инвестиции — от 500 000 до 1 500 000 ₽. Мы помогаем с финансовой моделью и переговорами по аренде.</div></div></div>
       <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)">Как быстро окупятся вложения?<span class="faq-arr">▾</span></button><div class="faq-a"><div class="faq-a-inner">При правильном запуске — за 3–6 месяцев. Это реально благодаря высокому чеку (8 000 ₽), готовому потоку заявок и нейропродавцу. В 1-й месяц вы уже получаете выручку.</div></div></div>
       <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)">Где брать тренеров? Нужна специальная квалификация?<span class="faq-arr">▾</span></button><div class="faq-a"><div class="faq-a-inner">Мы даём стандарты найма и профиль кандидата. Тренер должен иметь опыт в теннисе — но это может быть бывший спортсмен-любитель с энтузиазмом к работе с детьми. Методике обучаем сами.</div></div></div>
       <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)">В моём городе уже есть теннисные школы — это проблема?<span class="faq-arr">▾</span></button><div class="faq-a"><div class="faq-a-inner">Конкуренция есть везде, но у ПШТ уникальные преимущества: методика с измеримым результатом, нейропродавец 24/7, аттестация по 21 параметру и лига. Этого нет у большинства местных школ.</div></div></div>
@@ -1046,10 +1066,16 @@
   </div>
 </footer>
 
+<!-- COOKIE BAR -->
+<div class="cookie-bar" id="cookie-bar">
+  <span>Мы используем cookie для улучшения сайта. <a href="#" onclick="document.getElementById('privacy-modal').style.display='flex';return false;">Подробнее</a></span>
+  <button class="cookie-ok" onclick="document.getElementById('cookie-bar').style.display='none';localStorage.setItem('cookie_ok','1');">ОК</button>
+</div>
+
 <!-- FLOATING BUTTONS -->
 <div class="float-btns">
-  <a href="https://wa.me/79042424714" class="float-btn float-wa" title="WhatsApp" target="_blank" rel="noopener">💬</a>
-  <a href="https://t.me/+79042424714" class="float-btn float-tg" title="Telegram" target="_blank" rel="noopener">✈️</a>
+  <a href="https://wa.me/79042424714" class="float-btn float-wa" title="WhatsApp" target="_blank" rel="noopener"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+  <a href="https://t.me/+79042424714" class="float-btn float-tg" title="Telegram" target="_blank" rel="noopener"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
 </div>
 
 <!-- PRIVACY MODAL -->
@@ -1087,7 +1113,7 @@
     <p>Сайт может использовать файлы cookies и сервисы веб-аналитики (Яндекс.Метрика) для сбора обезличенной статистики посещений. Пользователь может отключить cookies в настройках браузера.</p>
 
     <p><strong>8. Контакты Оператора</strong></p>
-    <p>ООО «ПЕРВАЯ ШКОЛА ТЕННИСА»<br>ОГРН: 1186451015630<br>Адрес: Саратовская область, г. Энгельс, мкр. Энгельс-1, д. 16, кв. 11<br>Телефон: <a href="tel:+79042424714" style="color:var(--blue);">+7 (904) 242-47-14</a><br>Email: <a href="mailto:info@bolshoitennis.ru" style="color:var(--blue);">info@bolshoitennis.ru</a><br>Сайт: <a href="https://bolshoitennis.ru" style="color:var(--blue);" target="_blank" rel="noopener">bolshoitennis.ru</a></p>
+    <p>ООО «ПЕРВАЯ ШКОЛА ТЕННИСА»<br>ОГРН: 1186451015630<br>Адрес: Саратовская область, г. Энгельс, мкр. Энгельс-1, д. 16, кв. 11<br>Телефон: <a href="tel:+79042424714" style="color:var(--blue);">+7 (904) 242-47-14</a><br>Email: <a href="mailto:lekroman@mail.ru" style="color:var(--blue);">lekroman@mail.ru</a><br>Сайт: <a href="https://franshiza.bolshoitennis.ru" style="color:var(--blue);" target="_blank" rel="noopener">franshiza.bolshoitennis.ru</a></p>
 
     <p style="margin-top:12px; font-size:.85rem; color:var(--text-muted);">По вопросам обработки персональных данных обращайтесь по телефону или email, указанным выше.</p>
 
@@ -1108,6 +1134,12 @@
 </div>
 
 <script>
+  // COOKIE — hide if already accepted
+  if (localStorage.getItem('cookie_ok')) {
+    var cb = document.getElementById('cookie-bar');
+    if (cb) cb.style.display = 'none';
+  }
+
   // MENU — animated burger ↔ X
   function toggleMenu() {
     document.getElementById('mobile-menu').classList.toggle('open');
@@ -1159,27 +1191,80 @@
     });
   }
 
-  // FORM SUBMIT — franchise form with animated success
+  // FORM SUBMIT — franchise form → email через FormSubmit.co (без API-ключа)
+  const FORMSUBMIT_URL = 'https://formsubmit.co/ajax/lekroman@mail.ru';
+
   function submitForm(e) {
     e.preventDefault();
     const btn = document.getElementById('submit-btn');
     btn.disabled = true; btn.textContent = 'Отправляю...';
-    setTimeout(() => {
-      document.getElementById('form-content').style.display = 'none';
-      document.getElementById('form-success').classList.add('show');
-    }, 1000);
+
+    fetch(FORMSUBMIT_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        _subject: 'Новая заявка на франшизу ПШТ',
+        _captcha: 'false',
+        _template: 'table',
+        'Имя': document.getElementById('f-name').value,
+        'Телефон': document.getElementById('f-phone').value,
+        'Город': document.getElementById('f-city').value,
+        'Бюджет': document.getElementById('f-budget').value || 'Не указан'
+      })
+    })
+    .then(r => r.json())
+    .then(res => {
+      if (res.success) {
+        document.getElementById('form-content').style.display = 'none';
+        document.getElementById('form-success').classList.add('show');
+      } else {
+        btn.disabled = false;
+        btn.textContent = 'Хочу открыть школу в своём городе →';
+        alert('Ошибка отправки. Попробуйте ещё раз или напишите в WhatsApp.');
+      }
+    })
+    .catch(() => {
+      btn.disabled = false;
+      btn.textContent = 'Хочу открыть школу в своём городе →';
+      alert('Ошибка сети. Попробуйте ещё раз или напишите в WhatsApp.');
+    });
   }
 
-  // CONTACT FORM SUBMIT — feedback form with SVG checkmark + confetti
+  // CONTACT FORM SUBMIT — feedback form → email через FormSubmit.co
   function submitContact(e) {
     e.preventDefault();
     const btn = document.getElementById('contact-submit-btn');
     btn.disabled = true; btn.textContent = 'Отправляю...';
-    setTimeout(() => {
-      document.getElementById('contact-form-content').style.display = 'none';
-      const success = document.getElementById('contact-success');
-      success.classList.add('show');
-    }, 800);
+
+    fetch(FORMSUBMIT_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        _subject: 'Сообщение с сайта франшизы ПШТ',
+        _captcha: 'false',
+        _template: 'table',
+        _replyto: document.getElementById('c-email').value,
+        'Имя': document.getElementById('c-name').value,
+        'Email': document.getElementById('c-email').value,
+        'Сообщение': document.getElementById('c-msg').value
+      })
+    })
+    .then(r => r.json())
+    .then(res => {
+      if (res.success) {
+        document.getElementById('contact-form-content').style.display = 'none';
+        document.getElementById('contact-success').classList.add('show');
+      } else {
+        btn.disabled = false;
+        btn.textContent = 'Отправить';
+        alert('Ошибка отправки. Попробуйте ещё раз.');
+      }
+    })
+    .catch(() => {
+      btn.disabled = false;
+      btn.textContent = 'Отправить';
+      alert('Ошибка сети. Попробуйте ещё раз.');
+    });
   }
 
   // REVEAL ON SCROLL — with stagger delay for siblings in grids
