@@ -517,25 +517,7 @@
       box-shadow: 0 8px 28px rgba(5,95,150,.35); }
     .scroll-top svg { width: 20px; height: 20px; }
 
-    /* CONTACT FORM SECTION */
-    #contact { background: white; }
-    .contact-wrap { max-width: 680px; margin: 0 auto; }
-    .contact-form { display: grid; gap: 16px; }
-    .contact-field { display: flex; flex-direction: column; gap: 6px; }
-    .contact-field label { font-size: .86rem; font-weight: 600; color: var(--text); }
-    .contact-field input, .contact-field textarea {
-      padding: 13px 16px; background: var(--bg2); border: 1.5px solid var(--border);
-      border-radius: var(--radius-sm); color: var(--text); font-size: .95rem;
-      font-family: 'Inter', sans-serif; transition: all .25s ease; width: 100%; }
-    .contact-field input:focus, .contact-field textarea:focus {
-      outline: none; border-color: var(--blue); background: white;
-      box-shadow: 0 0 0 3px rgba(5,95,150,.1); }
-    .contact-field textarea { resize: vertical; min-height: 120px; }
-    .contact-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-
     /* SUCCESS ANIMATION */
-    .contact-success { display: none; text-align: center; padding: 48px 20px; }
-    .contact-success.show { display: block; animation: successPopIn .5s cubic-bezier(.16,1,.3,1); }
     .success-check-wrap { width: 88px; height: 88px; margin: 0 auto 24px; position: relative; }
     .success-check-wrap svg { width: 88px; height: 88px; }
     .success-check-circle { stroke: var(--green); stroke-width: 3; fill: none;
@@ -543,9 +525,6 @@
     .success-check-tick { stroke: var(--green); stroke-width: 4; fill: none;
       stroke-linecap: round; stroke-linejoin: round;
       stroke-dasharray: 40; stroke-dashoffset: 40; animation: drawTick .4s .7s ease forwards; }
-    .contact-success h3 { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.6rem;
-      color: var(--blue); margin-bottom: 8px; }
-    .contact-success p { color: var(--text-muted); font-size: 1rem; }
     .confetti { position: absolute; width: 8px; height: 8px; border-radius: 2px; opacity: 0; }
     .confetti:nth-child(1) { background: var(--orange); animation: confettiBurst .8s .6s ease forwards; --tx: -40px; --ty: -60px; }
     .confetti:nth-child(2) { background: var(--blue); animation: confettiBurst .8s .65s ease forwards; --tx: 45px; --ty: -50px; }
@@ -667,7 +646,6 @@
       .hero-stats { grid-template-columns: 1fr 1fr; gap: 14px; }
       .hero-stat-num { font-size: 1.45rem; }
       .form-row { grid-template-columns: 1fr; }
-      .contact-row { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr; gap: 32px; }
       .float-btns { display: none; }
       .scroll-top { left: 14px; width: 44px; height: 44px; }
@@ -691,7 +669,7 @@
       <li><a href="#packages">Пакеты</a></li>
       <li><a href="#steps">Как открыть</a></li>
       <li><a href="#faq">FAQ</a></li>
-      <li><a href="#contact">Контакты</a></li>
+      <li><a href="#form-section">Контакты</a></li>
     </ul>
     <a href="#form-section" class="btn btn-orange btn-nav" style="flex-shrink:0;">Хочу открыть школу</a>
     <button class="burger" aria-label="Меню" onclick="toggleMenu()">
@@ -706,7 +684,7 @@
   <a href="#packages" onclick="closeMenu()">Пакеты</a>
   <a href="#steps" onclick="closeMenu()">Как открыть</a>
   <a href="#faq" onclick="closeMenu()">FAQ</a>
-  <a href="#contact" onclick="closeMenu()">Контакты</a>
+  <a href="#form-section" onclick="closeMenu()">Контакты</a>
   <a href="#form-section" class="btn btn-orange btn-full" onclick="closeMenu()">Хочу открыть школу</a>
 </div>
 
@@ -1029,41 +1007,6 @@
   </div>
 </section>
 
-<!-- CONTACT — quick feedback form -->
-<section id="contact">
-  <div class="container">
-    <div class="contact-wrap">
-      <div class="text-center" style="margin-bottom:40px;">
-        <span class="tag" style="text-align:center; display:block;">Обратная связь</span>
-        <h2 class="section-title">Остались вопросы? Напишите нам</h2>
-        <p class="section-sub mx-auto" style="text-align:center;">Ответим в течение дня. Расскажем подробности, пришлём материалы или просто поговорим о бизнесе.</p>
-      </div>
-      <div id="contact-form-content">
-        <form class="contact-form" onsubmit="submitContact(event)">
-          <div class="contact-row">
-            <div class="contact-field"><label for="c-name">Ваше имя</label><input type="text" id="c-name" name="name" placeholder="Александр" required></div>
-            <div class="contact-field"><label for="c-email">Email</label><input type="email" id="c-email" name="email" placeholder="alex@example.com" autocomplete="email" required></div>
-          </div>
-          <div class="contact-field"><label for="c-msg">Сообщение</label><textarea id="c-msg" name="message" placeholder="Расскажите, что вас интересует..." required></textarea></div>
-          <button type="submit" class="btn btn-blue btn-lg" id="contact-submit-btn" style="margin-top:4px;">Отправить сообщение →</button>
-        </form>
-      </div>
-      <div class="contact-success" id="contact-success">
-        <div class="success-check-wrap">
-          <div class="confetti"></div><div class="confetti"></div><div class="confetti"></div>
-          <div class="confetti"></div><div class="confetti"></div><div class="confetti"></div>
-          <svg viewBox="0 0 80 80">
-            <circle class="success-check-circle" cx="40" cy="40" r="36"/>
-            <polyline class="success-check-tick" points="24,42 35,53 56,30"/>
-          </svg>
-        </div>
-        <h3>Сообщение отправлено!</h3>
-        <p>Мы свяжемся с вами в ближайшее время.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- FORM -->
 <section id="form-section">
   <div class="container">
@@ -1311,43 +1254,6 @@
       btn.disabled = false;
       btn.textContent = 'Хочу открыть школу в своём городе →';
       alert('Ошибка сети. Попробуйте ещё раз или напишите в WhatsApp.');
-    });
-  }
-
-  // CONTACT FORM SUBMIT — feedback form → email через FormSubmit.co
-  function submitContact(e) {
-    e.preventDefault();
-    const btn = document.getElementById('contact-submit-btn');
-    btn.disabled = true; btn.textContent = 'Отправляю...';
-
-    fetch(FORMSUBMIT_URL, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify({
-        _subject: 'Сообщение с сайта франшизы ПШТ',
-        _captcha: 'false',
-        _template: 'table',
-        _replyto: document.getElementById('c-email').value,
-        'Имя': document.getElementById('c-name').value,
-        'Email': document.getElementById('c-email').value,
-        'Сообщение': document.getElementById('c-msg').value
-      })
-    })
-    .then(r => r.json())
-    .then(res => {
-      if (res.success) {
-        document.getElementById('contact-form-content').style.display = 'none';
-        document.getElementById('contact-success').classList.add('show');
-      } else {
-        btn.disabled = false;
-        btn.textContent = 'Отправить';
-        alert('Ошибка отправки. Попробуйте ещё раз.');
-      }
-    })
-    .catch(() => {
-      btn.disabled = false;
-      btn.textContent = 'Отправить';
-      alert('Ошибка сети. Попробуйте ещё раз.');
     });
   }
 
