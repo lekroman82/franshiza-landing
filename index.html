@@ -345,6 +345,20 @@
     .privacy-close { position: absolute; top: 12px; right: 16px; font-size: 1.4rem; color: var(--ink-muted); cursor: pointer; background: none; border: none; padding: 8px; line-height: 1; }
     .privacy-close:hover { color: var(--ink); }
 
+    /* LOCATIONS */
+    #locations { background: var(--paper); }
+    .locations-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .loc-card { position: relative; border-radius: 24px; overflow: hidden; aspect-ratio: 3/4; box-shadow: 0 20px 48px -16px rgba(2,67,115,0.22); transition: transform .3s ease, box-shadow .3s ease; }
+    .loc-card:hover { transform: translateY(-6px); box-shadow: 0 32px 64px -20px rgba(2,67,115,0.30); }
+    .loc-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+    .loc-card-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.08) 0%, transparent 35%, rgba(4,66,117,0.72) 100%); pointer-events: none; }
+    .loc-card-ribbon { position: absolute; left: 14px; top: 14px; display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.93); backdrop-filter: blur(8px); border-radius: 9999px; padding: 5px 12px; font-family: 'Oswald', sans-serif; font-size: .65rem; font-weight: 700; text-transform: uppercase; letter-spacing: .15em; color: var(--blue-dark); }
+    .loc-card-ribbon-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--green); flex-shrink: 0; }
+    .loc-card-body { position: absolute; left: 16px; right: 16px; bottom: 18px; }
+    .loc-card-city { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.3rem; color: white; letter-spacing: -0.01em; text-transform: uppercase; line-height: 1; margin-bottom: 5px; }
+    .loc-card-meta { font-size: .75rem; color: rgba(255,255,255,0.70); line-height: 1.4; }
+    .loc-card-meta strong { color: rgba(255,255,255,0.90); font-weight: 600; }
+
     /* REVEAL */
     .reveal { opacity: 0; transform: translateY(28px); transition: opacity .65s ease, transform .65s ease; }
     .reveal.visible { opacity: 1; transform: none; }
@@ -368,6 +382,7 @@
       .founder-img { min-height: 360px; border-radius: 24px; }
       .founder-img img { position: absolute; }
       .steps-wrap { grid-template-columns: 1fr; gap: 40px; }
+      .locations-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
       .packages-grid { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto; }
       .cards-grid { grid-template-columns: repeat(2,1fr); }
       .footer-grid { grid-template-columns: 1fr 1fr; }
@@ -784,6 +799,48 @@
         <div class="step reveal"><div class="step-num">4</div><div class="step-body"><div class="step-title">Набор первой группы</div><p class="step-text">Запускаем рекламу — начинают поступать заявки. Нейропродавец записывает детей автоматически.</p><span class="step-dur">1–2 недели</span></div></div>
         <div class="step reveal"><div class="step-num">5</div><div class="step-body"><div class="step-title">Первые тренировки и прибыль</div><p class="step-text">Дети занимаются, родители платят абонементы. Вы управляете — мы поддерживаем.</p><span class="step-dur">Прибыль уже в 1-й месяц</span></div></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATIONS -->
+<section id="locations">
+  <div class="container">
+    <span class="tag">Наши точки</span>
+    <h2 class="section-title">Работающие школы — живой пример</h2>
+    <p class="section-sub">Три точки в Подмосковье открыты с нуля за последние 5 лет. Каждая — кейс, который можно повторить в вашем городе.</p>
+    <div class="locations-grid">
+
+      <div class="loc-card reveal">
+        <img src="khimki-coaching.jpg" alt="Первая Школа Тенниса — Химки, тренировка с тренером">
+        <div class="loc-card-overlay"></div>
+        <div class="loc-card-ribbon"><span class="loc-card-ribbon-dot"></span>Работает</div>
+        <div class="loc-card-body">
+          <div class="loc-card-city">Химки</div>
+          <div class="loc-card-meta">Академия Островского · Юннатов 1А<br><strong>5 лет</strong> на рынке · стабильный поток учеников</div>
+        </div>
+      </div>
+
+      <div class="loc-card reveal">
+        <img src="krasnogorsk-court.jpg" alt="Первая Школа Тенниса — Красногорск, корт">
+        <div class="loc-card-overlay"></div>
+        <div class="loc-card-ribbon"><span class="loc-card-ribbon-dot"></span>Работает</div>
+        <div class="loc-card-body">
+          <div class="loc-card-city">Красногорск</div>
+          <div class="loc-card-meta">Крокус · Международная 20<br><strong>2 корта</strong> · детские и взрослые группы</div>
+        </div>
+      </div>
+
+      <div class="loc-card reveal">
+        <img src="dolgoprudny-training.jpg" alt="Первая Школа Тенниса — Долгопрудный, групповая тренировка">
+        <div class="loc-card-overlay"></div>
+        <div class="loc-card-ribbon"><span class="loc-card-ribbon-dot"></span>Работает</div>
+        <div class="loc-card-body">
+          <div class="loc-card-city">Долгопрудный</div>
+          <div class="loc-card-meta">Шереметьевский · 25 Съезда 2<br><strong>Открыт с нуля</strong> · быстрый выход в плюс</div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
