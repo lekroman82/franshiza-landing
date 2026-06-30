@@ -122,7 +122,7 @@
     .hero-photo-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.18) 0%, transparent 40%, rgba(4,66,117,0.22) 100%); pointer-events: none; }
     .hero-chip { position: absolute; left: 16px; top: 16px; display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.92); backdrop-filter: blur(8px); border-radius: 9999px; padding: 7px 14px; font-family: 'Oswald', sans-serif; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: var(--blue-dark); }
     .hero-chip-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); }
-    .hero-quote { position: absolute; right: 16px; top: 20px; max-width: 200px; font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; color: white; font-size: .95rem; line-height: 1.4; text-align: right; text-shadow: 0 2px 8px rgba(0,0,0,0.5); display: none; }
+    .hero-quote { position: absolute; right: 16px; top: 20px; max-width: 200px; font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; color: white; font-size: .95rem; line-height: 1.4; text-align: right; text-shadow: 0 2px 8px rgba(0,0,0,0.5); display: block; }
 
     /* SECTIONS ALTERNATE */
     #why    { background: var(--paper-soft); }
@@ -204,14 +204,30 @@
     .src-badge { padding: 6px 14px; background: white; border: 1px solid var(--border); border-radius: 9999px; font-size: .83rem; font-weight: 600; color: var(--ink); }
 
     /* FOUNDER */
-    .founder-grid { display: grid; grid-template-columns: 380px 1fr; gap: 56px; align-items: center; }
-    .founder-img { width: 100%; border-radius: 24px; overflow: hidden; }
-    .founder-img img { width: 100%; height: 480px; object-fit: cover; object-position: center top; display: block; }
-    .founder-name { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.7rem; color: var(--blue-dark); margin-bottom: 4px; }
-    .founder-role { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.1rem; color: var(--orange); margin-bottom: 20px; font-weight: 400; }
-    .founder-text { font-size: .97rem; color: var(--ink-muted); line-height: 1.8; margin-bottom: 22px; }
-    .founder-quote { padding: 18px 22px; background: var(--paper-cream); border-left: 3px solid var(--orange); border-radius: 0 12px 12px 0; font-family: 'Playfair Display', serif; font-style: italic; color: var(--ink); font-size: 1rem; line-height: 1.65; margin-bottom: 24px; }
-    .founder-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+    .founder-grid { display: grid; grid-template-columns: 5fr 7fr; gap: 56px; align-items: stretch; }
+    .founder-img { position: relative; border-radius: 32px; overflow: hidden; min-height: 560px; box-shadow: 0 40px 80px -40px rgba(2,67,115,0.30); }
+    .founder-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+    .founder-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.10) 0%, transparent 40%, rgba(4,66,117,0.50) 100%); pointer-events: none; }
+    .founder-ribbon { position: absolute; left: 16px; top: 16px; display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 9999px; padding: 7px 14px; font-family: 'Oswald', sans-serif; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .18em; color: var(--blue-dark); }
+    .founder-ribbon-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--orange); flex-shrink: 0; }
+    .founder-caption { position: absolute; left: 20px; right: 20px; bottom: 20px; }
+    .founder-caption-label { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: .65rem; letter-spacing: .22em; text-transform: uppercase; color: rgba(255,255,255,0.75); margin-bottom: 6px; }
+    .founder-caption-name { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; font-size: 1.6rem; line-height: 1.1; color: white; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+    .founder-caption-name strong { font-style: normal; font-family: 'Playfair Display', serif; color: var(--orange); }
+    .founder-right { display: flex; flex-direction: column; gap: 28px; padding: 12px 0; }
+    .founder-tag { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: .78rem; letter-spacing: .22em; text-transform: uppercase; color: var(--orange); }
+    .founder-pullquote { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; color: var(--ink); line-height: 1.15; letter-spacing: -0.015em; font-size: clamp(1.5rem, 2.8vw, 2.4rem); }
+    .founder-pullquote .pq-mark { color: var(--orange); font-style: normal; }
+    .founder-pullquote .pq-accent { color: var(--orange); }
+    .founder-sig { display: flex; align-items: center; gap: 16px; }
+    .founder-sig-line { display: block; width: 48px; height: 2px; background: var(--orange); flex-shrink: 0; }
+    .founder-sig-name { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.2rem; letter-spacing: -0.015em; text-transform: uppercase; color: var(--ink); }
+    .founder-sig-sub { font-size: .82rem; color: var(--ink-muted); margin-top: 2px; }
+    .founder-creds { display: flex; flex-direction: column; gap: 22px; margin-top: 8px; }
+    .founder-cred { display: grid; grid-template-columns: 48px 1fr; gap: 16px; align-items: baseline; }
+    .founder-cred-num { font-family: 'Oswald', sans-serif; font-weight: 800; font-size: 1.6rem; color: var(--orange); line-height: 1; letter-spacing: -0.02em; }
+    .founder-cred-text { font-family: 'Playfair Display', serif; font-weight: 400; font-size: 1rem; line-height: 1.45; color: var(--ink); letter-spacing: -0.005em; }
+    .founder-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
 
     /* PACKAGES */
     .packages-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
@@ -349,7 +365,8 @@
       .method-wrap { grid-template-columns: 1fr; }
       .attest-grid { grid-template-columns: 1fr; }
       .founder-grid { grid-template-columns: 1fr; }
-      .founder-img img { height: 320px; }
+      .founder-img { min-height: 360px; border-radius: 24px; }
+      .founder-img img { position: absolute; }
       .steps-wrap { grid-template-columns: 1fr; gap: 40px; }
       .packages-grid { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto; }
       .cards-grid { grid-template-columns: repeat(2,1fr); }
@@ -633,21 +650,62 @@
 <section id="founder">
   <div class="container">
     <div class="founder-grid">
+
+      <!-- LEFT — фото-полотно с overlay и ribbon -->
       <div class="founder-img reveal-left">
-        <img src="02-roman-portrait-court.jpg" alt="Роман Лекомцев — основатель Первой Школы Тенниса, 20+ лет в теннисе">
+        <img src="02-roman-portrait-court.jpg" alt="Роман Лекомцев — основатель Первой Школы Тенниса, на корте">
+        <div class="founder-overlay"></div>
+        <div class="founder-ribbon">
+          <span class="founder-ribbon-dot"></span>
+          Основатель · с 2005
+        </div>
+        <div class="founder-caption">
+          <div class="founder-caption-label">Первая Школа Тенниса</div>
+          <div class="founder-caption-name">Роман <strong>Лекомцев</strong></div>
+        </div>
       </div>
-      <div class="reveal-right">
-        <span class="tag">Команда</span>
-        <div class="founder-name">Роман Лекомцев</div>
-        <div class="founder-role">20+ лет в теннисе</div>
-        <p class="founder-text">Вы не покупаете лицензию у корпорации. Вы становитесь партнёром человека, который построил эту систему своими руками с 10 лет — с первой тренировки в маленьком городе до сети школ в Москве и Подмосковье.</p>
-        <p class="founder-text">Сегодня «Первая Школа Тенниса» работает в Красногорске, Химках, Долгопрудном и Саратове. Методика, CRM и нейропродавец — всё создано внутри и проверено на реальных учениках годами.</p>
-        <div class="founder-quote">«Я хочу, чтобы теннис стал доступным в каждом городе России. Каждый партнёр ПШТ делает это реальностью.»</div>
+
+      <!-- RIGHT — pull-quote + credentials -->
+      <div class="founder-right reveal-right">
+        <span class="founder-tag">Основатель школы</span>
+
+        <blockquote class="founder-pullquote">
+          <span class="pq-mark">«</span>Я верю: если мы научим детей побеждать в теннисе — то чем бы они по жизни ни занялись, <span class="pq-accent">они будут побеждать в любом деле</span><span class="pq-mark">»</span>
+        </blockquote>
+
+        <div class="founder-sig">
+          <span class="founder-sig-line"></span>
+          <div>
+            <div class="founder-sig-name">Роман Лекомцев</div>
+            <div class="founder-sig-sub">Основатель сети ПШТ</div>
+          </div>
+        </div>
+
+        <ul class="founder-creds">
+          <li class="founder-cred">
+            <span class="founder-cred-num">01</span>
+            <span class="founder-cred-text">Основатель сети «Первая Школа Тенниса» — с 2005 года</span>
+          </li>
+          <li class="founder-cred">
+            <span class="founder-cred-num">02</span>
+            <span class="founder-cred-text">20+ лет опыта в теннисе и спортивном бизнесе</span>
+          </li>
+          <li class="founder-cred">
+            <span class="founder-cred-num">03</span>
+            <span class="founder-cred-text">Создатель методики ускоренного обучения «8 тренировок — и ты теннисист»</span>
+          </li>
+          <li class="founder-cred">
+            <span class="founder-cred-num">04</span>
+            <span class="founder-cred-text">Открыл точки в Красногорске, Химках, Долгопрудном и Саратове — с нуля</span>
+          </li>
+        </ul>
+
         <div class="founder-btns">
           <a href="https://t.me/Roman_Lekomtsev" class="btn btn-orange" target="_blank" rel="noopener">Telegram →</a>
           <a href="https://wa.me/79042424714" class="btn btn-white" target="_blank" rel="noopener">WhatsApp</a>
         </div>
       </div>
+
     </div>
   </div>
 </section>
